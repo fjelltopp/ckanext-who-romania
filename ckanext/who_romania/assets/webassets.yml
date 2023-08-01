@@ -1,0 +1,5 @@
+who-romania-theme:
+  filter: cssrewrite
+  output: ckanext-who-romania/%(version)s-who-romania.css
+  contents:
+    - css/who-romania.css
