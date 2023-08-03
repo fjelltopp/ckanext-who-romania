@@ -76,3 +76,17 @@ def _facet_sort_function(facet_name, facet_items):
         facet_items.sort(key=lambda it: (-it['count'], it['display_name'].lower()))
 
     return facet_items
+
+
+def get_all_groups():
+    return logic.get_action('group_list')(
+            data_dict={'sort': 'title asc', 'all_fields': True})
+
+
+def get_featured_datasets():
+    featured_datasets = logic.get_action('package_search')(
+        data_dict={'fq': 'tags:featured', 'sort': 'metadata_modified desc', 'rows': 3})['results']
+    recently_updated = logic.get_action('package_search')(
+        data_dict={'q': '*:*', 'sort': 'metadata_modified desc', 'rows': 3})['results']
+    datasets = featured_datasets + recently_updated
+    return datasets[:3]

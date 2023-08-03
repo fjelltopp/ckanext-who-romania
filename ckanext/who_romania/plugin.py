@@ -11,10 +11,9 @@ import ckanext.who_romania.authn as who_romania_authn
 import ckanext.who_romania.authz as who_romania_authz
 import ckanext.who_romania.upload as who_romania_upload
 import ckanext.who_romania.validators as who_romania_validators
+import ckanext.who_romania.helpers as who_romania_helpers
 from ckan.lib.plugins import DefaultPermissionLabels
-from ckanext.who_romania.helpers import (
-    get_dataset_from_id, get_facet_items_dict
-)
+
 from ckan.common import config_declaration
 
 log = logging.getLogger(__name__)
@@ -37,17 +36,19 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # ITemplateHelpers
     def get_helpers(self):
         return {
-            u'max_resource_size': uploader.get_max_resource_size,
-            u'get_dataset_from_id': get_dataset_from_id,
-            u'blob_storage_resource_filename': blobstorage_helpers.resource_filename,
-            u'get_facet_items_dict': get_facet_items_dict
+            'max_resource_size': uploader.get_max_resource_size,
+            'get_dataset_from_id': who_romania_helpers.get_dataset_from_id,
+            'blob_storage_resource_filename': blobstorage_helpers.resource_filename,
+            'get_facet_items_dict': who_romania_helpers.get_facet_items_dict,
+            'get_all_groups': who_romania_helpers.get_all_groups,
+            'get_featured_datasets': who_romania_helpers.get_featured_datasets
         }
 
     # IConfigurer
     def update_config(self, config_):
         toolkit.add_template_directory(config_, "templates")
         toolkit.add_public_directory(config_, "public")
-        toolkit.add_resource("assets", "who_romania")
+        toolkit.add_resource("assets", "who-romania")
 
     # IConfigurable
     def configure(self, config):

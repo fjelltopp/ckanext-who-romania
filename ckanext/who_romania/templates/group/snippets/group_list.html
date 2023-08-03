@@ -1,0 +1,10 @@
+{% ckan_extends %}
+
+{% block group_list %}
+    {% set groups = groups %}
+    <div class="row">
+        {% for group in groups %}
+            {% snippet "group/snippets/group_item.html", group=group, position=loop.index %}
+        {% endfor %}
+    </div>
+{% endblock %}
