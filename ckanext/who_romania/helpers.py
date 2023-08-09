@@ -90,3 +90,9 @@ def get_featured_datasets():
         data_dict={'q': '*:*', 'sort': 'metadata_modified desc', 'rows': 3})['results']
     datasets = featured_datasets + recently_updated
     return datasets[:3]
+
+
+def get_user_from_id(userid):
+    user_show_action = logic.get_action('user_show')
+    user_info = user_show_action({}, {"id": userid})
+    return user_info['fullname']

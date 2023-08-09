@@ -1,8 +1,18 @@
 who-romania-theme:
   filter: cssrewrite
-  output: ckanext-dms/%(version)s-who-romania.css
+  output: who-romania/%(version)s-who-romania.css
   contents:
     - css/who-romania-main.css
     - css/inter.css
     - css/who-romania.css
 
+FileInputComponentStyles:
+    contents:
+        - css/FileInputComponent.css
+    output: who-romania/%(version)s_FileInputComponent.css
+
+FileInputComponentScripts:
+    contents:
+        - frictionless-js.js
+        - build/FileInputComponent.js
+    output: who-romania/%(version)s_FileInputComponent.js

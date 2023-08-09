@@ -96,35 +96,39 @@ p.small {
 
 .promoted-background {
     width: 100%;
-    background-image: url("/images/small_piling_documents.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/small_promoted_background.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     color: #FFFFFF;
 }
 
 @media only screen and (min-width: 468px) {
     .promoted-background {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/medium_piling_documents.png");
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("/images/medium_promoted_background.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
 @media only screen and (min-width: 992px) {
     .promoted-background {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/web_piling_docs.png");
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("/images/large_promoted_background.png");
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
     }
 }
 
 #NavbarBrandingContainer {
-    width:  275px;
+    position:absolute;
+    top:5px;
+    left:0px;
 }
 
 #NavbarLogo {
     display:  inline-block;
-    width: 50px;
     height: 50px;
 }
 
@@ -156,7 +160,7 @@ p.small {
     color: #212121;
 }
 
-@media only screen and (min-width: 767px){
+@media only screen and (min-width: 992px){
     .masthead .navbar-collapse{
         padding-top: 12px;
         display: flex !important;
@@ -165,6 +169,21 @@ p.small {
 
 .masthead .navbar{
     margin-bottom: 0px;
+    min-height: 80px;
+}
+
+.navbar-nav{
+    margin: 0px;
+}
+
+.navbar-light .navbar-toggler {
+    background: #008dc9;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    position:absolute;
+    top:25px;
+    right: 0px;
 }
 
 .masthead .main-navbar .navbar-nav > li > a
@@ -191,7 +210,7 @@ p.small {
 .masthead .main-navbar ul li:focus a,
 .masthead .main-navbar ul li.active a
 {
-    color: #212121;
+    color: #d86422;
     background-color: transparent;
 
 }
@@ -222,7 +241,7 @@ p.small {
 
 .account-masthead {
   height: 40px;
-  background: #EDE8E8;
+  background: #008dc9;
 }
 
 .account-masthead .account ul li a {
@@ -230,19 +249,29 @@ p.small {
     font-weight: 400;
     font-size: 14px;
     text-align: right;
-    color: #008dc9;
+    color: #fff;
     padding:  0px;
     margin-left:  15px;
     line-height: 40px;
 }
 
-.account-masthead .account ul li a:hover{
-    color: #212121;
+.account-masthead .account ul li:hover a:hover{
+    color: #fff1e9;
     background-color: transparent;
 }
 
 .account-masthead .account ul li {
   border-left: none;
+}
+
+.account-masthead .account.authed .image img {
+    border-radius: 4px;
+    border: 2px solid #fff;
+}
+
+.account-masthead .account .notifications a span.badge {
+    background: #fff1e9;
+    color: #d86422;
 }
 
 .promoted {
@@ -377,7 +406,7 @@ p.small {
 
 .dataset-resources li{
     padding: 2px 6px;
-    background: #E9F1ED;
+    background: #fff1e9;
     border-radius: 4px;
     margin-right: 10px;
     margin-bottom: 24px;
@@ -386,17 +415,17 @@ p.small {
     border:  none;
 }
 
-.dataset-resources li a.label,
-.dataset-resources li a.label:hover{
+.dataset-resources li a.badge,
+.dataset-resources li a.badge:hover{
     background-color:  transparent;
-    color: #056839;
+    color: #d86422;
     padding:  0px;
 }
 
 a.tag,
 a.tag:hover  {
     padding: 2px 6px;
-    background: #E9F1ED;
+    background: #fff1e9;
     border-radius: 4px;
     margin-right: 10px;
     margin-bottom: 24px;
@@ -411,6 +440,7 @@ a.tag:hover  {
     background:  transparent;
     border:  none;
 }
+
 .recently-updated H2 {
     font-weight: 700;
     font-size: 28px;
@@ -525,7 +555,7 @@ a.tag:hover  {
     text-decoration: underline;
 }
 
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 992px) {
     .mobile-menu {
         display: none;
     }
@@ -534,8 +564,15 @@ a.tag:hover  {
     }
 }
 
+.mobile-menu .search-form{
+    margin-top: 80px;
+    margin-bottom: 0px;
+    padding-bottom: 25px;
+    border-bottom: none;
+}
+
 .site-footer {
-    background-color: #000000;
+    background-color: #232728;
     width: 100%;
 }
 
@@ -624,10 +661,23 @@ a.tag:hover  {
 
 
 .btn-primary:hover,
-.btn-danger:hover {
+.btn-danger:hover,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active:hover,
+.btn-primary.active:hover,
+.open > .dropdown-toggle.btn-primary:hover,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.open > .dropdown-toggle.btn-primary:focus,
+.btn-primary:active.focus,
+.btn-primary.active.focus,
+.open > .dropdown-toggle.btn-primary.focus  {
   color: #fff;
-  background-color: #800004;
-  border-color: #ffffff;
+  background-color: #d86422;
+  border-color: #d86422;
 }
 
 .btn-xs{
@@ -706,3 +756,16 @@ a.tag:hover  {
 }
 
 
+.activity {
+    background-position: 24px 0;
+}
+
+.dropdown-toggle:after{
+    display:none;
+}
+
+.select2-container {
+    border: none;
+    box-shadow: none;
+    padding: 7px 0px;
+}

@@ -1,0 +1,13 @@
+{
+  "scheming_presets_version": 1,
+  "about": "These are Scheming presets specific to WHO Romania",
+  "about_url": "http://github.com/ckan/ckanext-scheming#preset",
+  "presets": [
+    {
+      "preset_name": "resource_giftless_upload",
+      "values": {
+        "form_snippet": "resource_upload.html"
+      }
+    }
+  ]
+}

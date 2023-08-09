@@ -26,7 +26,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     plugins.implements(plugins.IFacets, inherit=True)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IResourceController, inherit=True)
-    plugins.implements(plugins.IPermissionLabels)
     plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IActions)
     plugins.implements(plugins.IValidators)
@@ -41,7 +40,8 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             'blob_storage_resource_filename': blobstorage_helpers.resource_filename,
             'get_facet_items_dict': who_romania_helpers.get_facet_items_dict,
             'get_all_groups': who_romania_helpers.get_all_groups,
-            'get_featured_datasets': who_romania_helpers.get_featured_datasets
+            'get_featured_datasets': who_romania_helpers.get_featured_datasets,
+            'get_user_from_id': who_romania_helpers.get_user_from_id
         }
 
     # IConfigurer
@@ -75,25 +75,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     def before_resource_update(self, context, current, resource):
         who_romania_upload.handle_giftless_uploads(context, resource, current=current)
         return resource
-
-    # IPermissionLabels
-    def get_dataset_labels(self, dataset_obj):
-        """
-        Stops private datasets from being visible to other members of the same
-        organisation, whilst ensuring they remain visible to the creator user.
-
-        This function is extending the default parent class behaviour found
-        in ckan.lib.plugins.DefaultPermissionLabels. We remove the label
-        identifying the dataset as a member of the parent organisation, and
-        replace it with the label identifying the creator user id.
-        """
-        labels = set(super(WHORomaniaPlugin, self).get_dataset_labels(dataset_obj))
-
-        if dataset_obj.owner_org:
-            labels.discard(f'member-{dataset_obj.owner_org}')
-            labels.add(f'creator-{dataset_obj.creator_user_id}')
-
-        return list(labels)
 
     # IAuthFunctions
     def get_auth_functions(self):
@@ -139,25 +120,12 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # IAuthenticator
     def identify(self):
         """
-        Requires all API requests to be made by a registered sysadmin user.
-
         Allows API requests to be sent "on behalf" of a substitute user. This is
         done by setting a HTTP Header in the requests "CKAN-Substitute-User" to be the
         username or user id of another CKAN user.
         """
 
-        if toolkit.request.path.startswith('/api/') or ('/download/' in toolkit.request.path):
-            user_is_sysadmin = getattr(toolkit.current_user, 'sysadmin', False)
-            if not user_is_sysadmin:
-                return {
-                    "success": False,
-                    "error": {
-                        "__type": "Not Authorized",
-                        "message": "Must be a system administrator."
-                    }
-                }, 403
+        substitute_user_id = toolkit.request.headers.get('CKAN-Substitute-User')
 
-            substitute_user_id = toolkit.request.headers.get('CKAN-Substitute-User')
-
-            if substitute_user_id:
-                return who_romania_authn.substitute_user(substitute_user_id)
+        if substitute_user_id:
+            return who_romania_authn.substitute_user(substitute_user_id)

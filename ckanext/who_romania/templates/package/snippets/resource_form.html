@@ -3,7 +3,7 @@
 {% set dataset = h.get_dataset_from_id(pkg_name) %}
 
 {% block basic_fields_url %}
-    {% asset 'dms/FileInputComponentStyles' %}
+    {% asset 'who-romania/FileInputComponentStyles' %}
     <div
         id="FileInputComponent"
         data-lfsServer="{{ h.blob_storage_server_url() }}"
@@ -42,5 +42,5 @@
             </div>
         {% endif %}
     </div>
-    {% asset 'dms/FileInputComponentScripts' %}
+    {% asset 'who-romania/FileInputComponentScripts' %}
 {% endblock %}
