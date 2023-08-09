@@ -7,9 +7,8 @@
       <ul class="list-unstyled">
         {% block footer_links %}
             <li><a href="{{ h.url_for('/organization') }}">{{ _('Organisations') }}</a></li>
-              {% set api_url = 'http://docs.ckan.org/en/{0}/api/'.format(g.ckan_doc_version) %}
-            <li><a href="{{ api_url }}" target="_blank">{{ _('WRC API') }}</a></li>
-            <li><a href="https://hiv.health.gov.mw/" target="_blank">WHO Romania Country Office</a><br />
+            <li><a href="http://docs.ckan.org/en/2.10/api/" target="_blank">{{ _('WRC API Docs') }}</a></li>
+            <li><a href="https://www.who.int/romania" target="_blank">WHO Romania Country Office</a><br />
         {% endblock %}
       </ul>
       {% block footer_links_ckan %}
@@ -22,7 +21,7 @@
     {% endblock %}
   </div>
   <div class="col-xs-6 col-sm-3 col-lg-2 footer-links">
-    <a href="https://unaids.org" target="_blank"><img src="/images/who.png"/></a>
+    <a href="https://who.int" target="_blank"><img src="/images/who.png"/></a>
     <a href="https://fjelltopp.org" target="_blank"><img src="/images/fjelltopp.png" /></a>
   </div>
 {% endblock %}
