@@ -564,11 +564,13 @@ a.tag:hover  {
     }
 }
 
-.mobile-menu .search-form{
-    margin-top: 80px;
+.mobile-menu .search-form {
+    margin-top: 70px;
     margin-bottom: 0px;
+    padding-top: 20px;
     padding-bottom: 25px;
     border-bottom: none;
+    border-top: 1px dashed #dddddd;
 }
 
 .site-footer {
