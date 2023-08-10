@@ -79,7 +79,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # IAuthFunctions
     def get_auth_functions(self):
         return {
-            'package_update': who_romania_authz.package_update,
             'package_collaborator_create': who_romania_authz.creators_manage_collaborators,
             'package_collaborator_delete': who_romania_authz.creators_manage_collaborators,
             'package_collaborator_list': who_romania_authz.creators_manage_collaborators
