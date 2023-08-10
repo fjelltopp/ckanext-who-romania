@@ -78,10 +78,12 @@ dataset_fields:
   help_inline: true
   preset: select
   choices:
-  - value: "false"
+  - value: false
     label: Public
-  - value: "true"
+  - value: true
     label: Private
+  validators: boolean_validator
+  output_validators: boolean_validator
 
 
 resource_fields:
