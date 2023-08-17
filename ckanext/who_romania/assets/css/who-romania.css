@@ -771,3 +771,17 @@ a.tag:hover  {
     box-shadow: none;
     padding: 7px 0px;
 }
+
+/* change URL: field to Username: */
+#username-input-field .slug-preview strong {
+    display: none;
+}
+
+/* make username input conform to form style */
+#username-input-field .input-group {
+    width: 100%;
+}
+
+#username-input-field .form-control {
+    border-radius: 3px;
+}

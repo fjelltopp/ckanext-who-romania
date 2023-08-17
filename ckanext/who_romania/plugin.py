@@ -88,7 +88,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     def get_actions(self):
         return {
             'user_list': who_romania_actions.user_list,
-            'user_create': who_romania_actions.user_create,
             'dataset_duplicate': who_romania_actions.dataset_duplicate,
             'package_create': who_romania_actions.package_create,
             'dataset_tag_replace': who_romania_actions.dataset_tag_replace
