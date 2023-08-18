@@ -53,13 +53,6 @@ dataset_fields:
   form_snippet: license.html
   help_text: License definitions and additional information can be found at http://opendefinition.org/
 
-- field_name: owner_org
-  label: Organization
-  preset: dataset_organization
-  https://github:
-    com/ckan/ckanext-scheming/blob/master/ckanext/scheming/templates/scheming/form_snippets/organization:
-      html:
-
 - field_name: author
   label: Author
   form_placeholder: Joe Bloggs
@@ -71,6 +64,13 @@ dataset_fields:
   display_property: dc:creator
   display_snippet: email.html
   display_email_name_field: author
+
+- field_name: owner_org
+  label: Organization
+  preset: dataset_organization
+  https://github:
+    com/ckan/ckanext-scheming/blob/master/ckanext/scheming/templates/scheming/form_snippets/organization:
+      html:
 
 - field_name: private
   label: Visibility
@@ -87,10 +87,6 @@ dataset_fields:
 
 
 resource_fields:
-
-- field_name: url
-  label: URL
-  preset: resource_giftless_upload
 
 - field_name: name
   label: Name
