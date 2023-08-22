@@ -25,18 +25,14 @@ dataset_fields:
   label: Program Area
   preset: select
   choices:
-  - value: Care and Treatment
-    label: Care and Treatment
-  - value: Monitoring and Evaluation
-    label: Monitoring and Evaluation
-  - value: Sexually Transmitted Infection
-    label: Sexually Transmitted Infection
-  - value: Strategic Plan
-    label: Strategic Plan
-  - value: Prevention of Mother to Child Transmission
-    label: Prevention of Mother to Child Transmission
-  - value: HIV Testing and Counselling
-    label: HIV Testing and Counselling
+  - value: Sexual and Reproductive Health
+    label: Sexual and Reproductive Health
+  - value: HIV & TB
+    label: HIV & TB
+  - value: Mental Health and Psychosocial Support
+    label: Mental Health and Psychosocial Support
+  - value: E-Health
+    label: E-Health
 
 - field_name: year
   label: Year

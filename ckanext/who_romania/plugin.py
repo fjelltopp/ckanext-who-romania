@@ -62,8 +62,8 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # IFacets
     def dataset_facets(self, facet_dict, package_type):
         new_fd = OrderedDict()
-        new_fd['type'] = plugins.toolkit._('Projection Types')
-        new_fd['country_name'] = plugins.toolkit._('Countries')
+        new_fd['program_area'] = plugins.toolkit._('Program Areas')
+        new_fd['year'] = plugins.toolkit._('Years')
         new_fd['tags'] = plugins.toolkit._('Tags')
         return new_fd
 
