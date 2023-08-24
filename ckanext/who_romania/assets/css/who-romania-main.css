@@ -3436,13 +3436,15 @@ input[type="button"].btn-block {
   width: 100%;
 }
 .fade {
-  opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-  -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear;
 }
-.fade.in {
-  opacity: 1;
+@media (prefers-reduced-motion: reduce) {
+  .fade {
+    transition: none;
+  }
+}
+.fade:not(.show) {
+  opacity: 0;
 }
 .collapse {
   display: none;
@@ -5012,13 +5014,7 @@ a.thumbnail.active {
 .alert-dismissible {
   padding-right: 35px;
 }
-.alert-dismissable .close,
-.alert-dismissible .close {
-  position: relative;
-  top: -2px;
-  right: -21px;
-  color: inherit;
-}
+
 .alert-success {
   color: #3c763d;
   background-color: #dff0d8;
@@ -5792,32 +5788,6 @@ button.list-group-item-danger.active:focus {
 .well-sm {
   padding: 9px;
   border-radius: 3px;
-}
-.close {
-  float: right;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 1;
-  color: #000000;
-  text-shadow: 0 1px 0 #ffffff;
-  filter: alpha(opacity=20);
-  opacity: 0.2;
-}
-.close:hover,
-.close:focus {
-  color: #000000;
-  text-decoration: none;
-  cursor: pointer;
-  filter: alpha(opacity=50);
-  opacity: 0.5;
-}
-button.close {
-  padding: 0;
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  -webkit-appearance: none;
-  appearance: none;
 }
 .modal-open {
   overflow: hidden;
