@@ -2,7 +2,6 @@ who-romania-theme:
   filter: cssrewrite
   output: who-romania/%(version)s-who-romania.css
   contents:
-    - css/who-romania-main.css
     - css/inter.css
     - css/who-romania.css
 
