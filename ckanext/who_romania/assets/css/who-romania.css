@@ -1,5 +1,182 @@
 /* This file overwrites css from the base ckan theme */
+a {
+  color: #008dc9;
+}
 
+.text-primary {
+  color: #008dc9;
+}
+
+.bg-primary {
+  background-color: #008dc9;
+}
+
+.btn-primary {
+  background-color: #008dc9;
+}
+
+fieldset[disabled] .btn-primary.focus {
+  background-color: #008dc9;
+}
+
+.btn-primary .badge {
+  color: #008dc9;
+}
+
+.btn-link {
+  color: #008dc9;
+}
+
+.dropdown-menu > .active > a:focus {
+  background-color: #008dc9;
+}
+
+.nav .open > a:focus {
+  border-color: #008dc9;
+}
+
+.nav-pills > li.active > a:focus {
+  background-color: #008dc9;
+}
+
+.pagination > li > span {
+  color: #008dc9;
+}
+
+.pagination > .active > span:focus {
+  background-color: #008dc9;
+  border-color: #008dc9;
+}
+
+.label-primary {
+  background-color: #008dc9;
+}
+
+.nav-pills > .active > a > .badge {
+  color: #008dc9;
+}
+
+a.thumbnail.active {
+  border-color: #008dc9;
+}
+
+.progress-bar {
+  background-color: #008dc9;
+}
+
+.list-group-item.active,
+.list-group-item.active:hover,
+.list-group-item.active:focus {
+  background-color: #008dc9;
+  border-color: #008dc9;
+}
+
+.panel-primary {
+  border-color: #008dc9;
+}
+
+.panel-primary > .panel-heading {
+  background-color: #008dc9;
+  border-color: #008dc9;
+}
+
+.panel-primary > .panel-heading + .panel-collapse > .panel-body {
+  border-top-color: #008dc9;
+}
+.panel-primary > .panel-heading .badge {
+  color: #008dc9;
+}
+.panel-primary > .panel-footer + .panel-collapse > .panel-body {
+  border-bottom-color: #008dc9;
+}
+
+.banner {
+  background-color: #008dc9;
+}
+
+.media-view:hover,
+.media-view.hovered {
+  border-color: #008dc9;
+}
+
+.media-view:hover .banner,
+.media-view.hovered .banner {
+  background-color: #008dc9;
+}
+
+.editor .editor-info-block a {
+  color: #008dc9;
+}
+
+.resource-list.reordering .resource-item.ui-sortable-helper {
+  border: 1px solid #008dc9;
+}
+.resource-list.reordering .resource-item.ui-sortable-helper .handle {
+  border-color: #008dc9;
+}
+
+.view-list li a.active,
+.view-list li a:hover {
+  border-color: #008dc9;
+}
+
+.view-list li a.active .icon,
+.view-list li a:hover .icon {
+  background-color: #008dc9;
+}
+
+.view-list li .arrow {
+  border-top-color: #008dc9;
+}
+
+.view-list li.active a {
+  border-color: #008dc9;
+}
+.view-list li.active a .icon {
+  background-color: #008dc9;
+}
+
+.view-list.stacked::-webkit-scrollbar-thumb:hover {
+  background-color: #008dc9;
+}
+
+.homepage .module-search .module-content {
+  background-color: #008dc9;
+}
+
+.masthead {
+  background: #008dc9 url("../../../base/images/bg.png");
+}
+
+.site-footer {
+  background: #008dc9 url("../../../base/images/bg.png");
+}
+
+.popover-followee .nav li a i {
+  background-color: #008dc9;
+}
+
+.popover-followee .nav li.active a i {
+  color: #008dc9;
+}
+
+.resource-view-list.reordering li.ui-sortable-helper {
+  border: 1px solid #008dc9;
+}
+
+.resource-view-list.reordering li.ui-sortable-helper .handle {
+  border-color: #008dc9;
+}
+
+body {
+  background: #008dc9 url("../../../base/images/bg.png");
+}
+
+@media (max-width: 991px) {
+.site-search {
+    display: none;
+  }
+}
 
 body {
     background: #fff;
