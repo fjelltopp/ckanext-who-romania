@@ -34,6 +34,39 @@ def dataset_duplicate(context, data_dict):
 
 
 @toolkit.chained_action
+def user_create(next_action, context, data_dict):
+    if not data_dict.get('password'):
+        data_dict['password'] = secrets.token_urlsafe(32)
+
+    if not data_dict.get('name'):
+        if not data_dict.get('email'):
+            raise toolkit.ValidationError(toolkit._("Must specify either a name or an email"))
+        email = data_dict['email']
+        username = _get_random_username_from_email(email, context['model'])
+        data_dict['name'] = username
+
+    check_id_is_unique(context, data_dict)
+
+    created_user = next_action(context, data_dict)
+
+    assign_user_to_default_organisation(context, created_user)
+
+    return created_user
+
+
+def assign_user_to_default_organisation(context, created_user):
+    default_org_name = toolkit.config.get('ckanext.spectrum.default_organization', 'spectrum')
+    org_member_dict = {'id': default_org_name, 'username': created_user['name'], 'role': 'editor'}
+
+    try:
+        ignore_auth_context = {"user": context["user"], "ignore_auth": True}
+        toolkit.get_action('organization_member_create')(ignore_auth_context, org_member_dict)
+    except toolkit.ValidationError:
+        log.error(f"Failed to add newly created user: {created_user['name']} to org: {default_org_name}. "
+                  f"User account got created successfully.")
+
+
+@toolkit.chained_action
 def package_create(next_action, context, data_dict):
     dataset_type = data_dict.get('type', '')
 
