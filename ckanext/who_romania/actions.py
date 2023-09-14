@@ -32,6 +32,7 @@ def dataset_duplicate(context, data_dict):
 
     return toolkit.get_action('package_show')(context, {'id': duplicate_dataset['id']})
 
+
 @toolkit.chained_action
 def package_create(next_action, context, data_dict):
     dataset_type = data_dict.get('type', '')
