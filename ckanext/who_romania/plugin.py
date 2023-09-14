@@ -112,7 +112,9 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
         done by setting a HTTP Header in the requests "CKAN-Substitute-User" to be the
         username or user id of another CKAN user.
         """
+
         substitute_user_id = toolkit.request.headers.get('CKAN-Substitute-User')
+
         user_is_sysadmin = getattr(toolkit.current_user, 'sysadmin', False)
         if substitute_user_id:
             if not user_is_sysadmin:
