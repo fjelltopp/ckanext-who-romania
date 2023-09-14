@@ -8,7 +8,6 @@ import ckan.plugins as plugins
 import ckan.plugins.toolkit as toolkit
 import ckanext.who_romania.actions as who_romania_actions
 import ckanext.who_romania.authn as who_romania_authn
-import ckanext.who_romania.authz as who_romania_authz
 import ckanext.who_romania.upload as who_romania_upload
 import ckanext.who_romania.validators as who_romania_validators
 import ckanext.who_romania.helpers as who_romania_helpers
@@ -26,7 +25,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     plugins.implements(plugins.IFacets, inherit=True)
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IResourceController, inherit=True)
-    plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IActions)
     plugins.implements(plugins.IValidators)
     plugins.implements(plugins.IPackageController, inherit=True)
@@ -76,14 +74,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
         who_romania_upload.handle_giftless_uploads(context, resource, current=current)
         return resource
 
-    # IAuthFunctions
-    def get_auth_functions(self):
-        return {
-            'package_collaborator_create': who_romania_authz.creators_manage_collaborators,
-            'package_collaborator_delete': who_romania_authz.creators_manage_collaborators,
-            'package_collaborator_list': who_romania_authz.creators_manage_collaborators
-        }
-
     # IActions
     def get_actions(self):
         return {
@@ -122,8 +112,16 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
         done by setting a HTTP Header in the requests "CKAN-Substitute-User" to be the
         username or user id of another CKAN user.
         """
-
         substitute_user_id = toolkit.request.headers.get('CKAN-Substitute-User')
-
+        user_is_sysadmin = getattr(toolkit.current_user, 'sysadmin', False)
         if substitute_user_id:
+            if not user_is_sysadmin:
+                return {
+                    "success": False,
+                    "error": {
+                        "__type": "Not Authorized",
+                        "message": "Must be a system administrator."
+                    }
+                }, 403
+
             return who_romania_authn.substitute_user(substitute_user_id)

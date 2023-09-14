@@ -3,68 +3,6 @@ import ckan.plugins.toolkit as toolkit
 from ckan.tests import factories
 
 
-@pytest.mark.ckan_config('ckan.plugins', "who_romania scheming_datasets")
-@pytest.mark.usefixtures('clean_db', 'with_plugins')
-class TestSysadminsOnlyCanAccessAPI():
-
-    api_endpoints_to_test = [
-        ('user_show', 200),
-        ('package_list', 200),
-        ('package_search', 200),
-        ('user_list', 200),
-        ('dataset_duplicate', 409),
-        ('user_create', 409)
-    ]
-
-    def test_unregistered_user_can_access_home(self, app):
-        # Regression test: this feature was found to block access to homepage
-        response = app.get('/')
-        assert response.status_code == 200
-
-    @pytest.mark.parametrize('action', api_endpoints_to_test)
-    def test_api_endpoints_inaccessible_to_anonymous_users(self, app, action):
-        response = app.get(
-            toolkit.url_for('api.action', ver=3, logic_function=action)
-        )
-        assert response.status_code == 403
-        assert response.json == {
-            'success': False,
-            'error': {
-                '__type': 'Not Authorized',
-                'message': "Must be a system administrator."
-            }
-        }
-
-    @pytest.mark.parametrize('action', api_endpoints_to_test)
-    def test_api_endpoints_inaccessible_to_regular_users(self, app, action):
-        user = factories.UserWithToken()
-        response = app.get(
-            toolkit.url_for('api.action', ver=3, logic_function=action),
-            headers={
-                'Authorization': user['token']
-            }
-        )
-        assert response.status_code == 403
-        assert response.json == {
-            'success': False,
-            'error': {
-                '__type': 'Not Authorized',
-                'message': "Must be a system administrator."
-            }
-        }
-
-    @pytest.mark.parametrize('action, response_code', api_endpoints_to_test)
-    def test_api_endpoints_accessible_to_sysadmin_users(self, app, action, response_code):
-        user = factories.UserWithToken(sysadmin=True)
-        response = app.post(
-            toolkit.url_for('api.action', ver=3, logic_function=action),
-            headers={
-                'Authorization': user['token']
-            }
-        )
-        assert response.status_code == response_code
-
-
 @pytest.mark.usefixtures('clean_db', 'with_plugins')
 class TestSubstituteUser():
 
