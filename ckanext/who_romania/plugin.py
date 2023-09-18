@@ -39,7 +39,11 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             'get_facet_items_dict': who_romania_helpers.get_facet_items_dict,
             'get_all_groups': who_romania_helpers.get_all_groups,
             'get_featured_datasets': who_romania_helpers.get_featured_datasets,
-            'get_user_from_id': who_romania_helpers.get_user_from_id
+            'get_user_from_id': who_romania_helpers.get_user_from_id,
+            'get_user_obj': who_romania_helpers.get_user_obj,
+            'month_formatter': who_romania_helpers.month_formatter,
+            'get_dates_of_weekday_in_month': who_romania_helpers.get_dates_of_weekday_in_month,
+            'get_week_options': who_romania_helpers.get_week_options
         }
 
     # IConfigurer
@@ -86,7 +90,10 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # IValidators
     def get_validators(self):
         return {
-            'auto_generate_name_from_title': who_romania_validators.generate_name_from_title
+            'autogenerate_name_from_title': who_romania_validators.autogenerate_name_from_title,
+            'autofill': who_romania_validators.autofill,
+            'autogenerate': who_romania_validators.autogenerate,
+            'isomonth': who_romania_validators.isomonth
         }
 
     # IPackageContoller
