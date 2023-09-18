@@ -77,3 +77,32 @@ class TestAutoGenerateNameFromTitle(object):
         with pytest.raises(ValidationError, match="title.*Missing value"):
             call_action("package_create", type="auto-generate-name-from-title")
 
+
+@pytest.mark.usefixtures(u'clean_db')
+@pytest.mark.usefixtures(u'clean_index')
+class TestAutofill(object):
+    def test_autofilling(self):
+        dataset = call_action(
+            "package_create",
+            type="autofill-validator",
+            title="AutoFill",
+            name='autofill',
+            location="north-pole"
+        )
+        assert dataset['schema'] == u'art_3'
+        assert dataset['dataset_type'] == u'data-type'
+        assert dataset['year'] == u''
+
+    def test_not_overwriting(self):
+        dataset = call_action(
+            "package_create",
+            type="autofill-validator",
+            title="AutoFill",
+            name='autofill',
+            location="north-pole",
+            schema="art_4",
+            dataset_type="different-data-type", year="1984"
+        )
+        assert dataset['schema'] == u'art_4'
+        assert dataset['dataset_type'] == u'different-data-type'
+        assert dataset['year'] == u'1984'
