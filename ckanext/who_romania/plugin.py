@@ -90,7 +90,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     # IValidators
     def get_validators(self):
         return {
-            'generate_name_from_title': who_romania_validators.generate_name_from_title,
+            'autogenerate_name_from_title': who_romania_validators.autogenerate_name_from_title,
             'autofill': who_romania_validators.autofill,
             'autogenerate': who_romania_validators.autogenerate,
             'isomonth': who_romania_validators.isomonth

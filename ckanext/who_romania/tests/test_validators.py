@@ -78,8 +78,7 @@ class TestAutoGenerateNameFromTitle(object):
             call_action("package_create", type="auto-generate-name-from-title")
 
 
-@pytest.mark.usefixtures(u'clean_db')
-@pytest.mark.usefixtures(u'clean_index')
+@pytest.mark.usefixtures('clean_db', 'clean_index', 'with_plugins')
 class TestAutofill(object):
     def test_autofilling(self):
         dataset = call_action(

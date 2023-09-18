@@ -13,7 +13,7 @@ import slugify
 
 
 @scheming_validator
-def generate_name_from_title(field, schema):
+def autogenerate_name_from_title(field, schema):
 
     def validator(key, data, errors, context):
 
