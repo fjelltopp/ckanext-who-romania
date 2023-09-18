@@ -64,9 +64,6 @@ dataset_fields:
 - field_name: owner_org
   label: Organization
   preset: dataset_organization
-  https://github:
-    com/ckan/ckanext-scheming/blob/master/ckanext/scheming/templates/scheming/form_snippets/organization:
-      html:
 
 - field_name: private
   label: Visibility
