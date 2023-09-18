@@ -8,6 +8,19 @@
       "values": {
         "form_snippet": "resource_upload.html"
       }
+    }, {
+      "preset_name": "preset_value",
+      "values": {
+        "form_snippet": "no_input.html",
+        "validators": "autofill"
+      }
+    }, {
+      "preset_name": "month",
+      "values": {
+        "form_snippet": "month.html",
+        "display_snippet": "month.html",
+        "validators": "isomonth"
+      }
     }
   ]
 }
