@@ -33,11 +33,8 @@ dataset_fields:
     label: Mental Health and Psychosocial Support
   - value: E-Health
     label: E-Health
-
-- field_name: year
-  label: Year
-  validators: ignore_missing int_validator
-  form_placeholder: eg. 2022
+  - value: Family Medicine
+    label: Family Medicine
 
 - field_name: tag_string
   label: Tags
@@ -49,17 +46,16 @@ dataset_fields:
   form_snippet: license.html
   help_text: License definitions and additional information can be found at http://opendefinition.org/
 
-- field_name: author
-  label: Author
-  form_placeholder: Joe Bloggs
-  display_property: dc:creator
+- field_name: maintainer
+  label: Maintainer
+  user_field: fullname
+  form_snippet: user.html
 
-- field_name: author_email
-  label: Author Email
-  form_placeholder: joe@example.com
-  display_property: dc:creator
+- field_name: maintainer_email
+  label: Maintainer Email
+  user_field: email
+  form_snippet: user.html
   display_snippet: email.html
-  display_email_name_field: author
 
 - field_name: owner_org
   label: Organization
