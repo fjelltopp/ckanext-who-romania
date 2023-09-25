@@ -65,7 +65,7 @@ def _giftless_upload(context, resource, current=None):
                 'last_modified': datetime.datetime.utcnow(),
                 'sha256': uploaded_file['oid'],
                 'size': uploaded_file['size'],
-                'url': attached_file.filename,
+                'url': resource.get("filename", attached_file.filename),
                 'lfs_prefix': lfs_prefix
             })
 
