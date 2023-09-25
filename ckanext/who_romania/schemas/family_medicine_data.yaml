@@ -45,11 +45,6 @@ dataset_fields:
   label: Organization
   preset: dataset_organization
 
-- field_name: source_data
-  preset: preset_value
-  default: true
-  display_snippet: null
-
 - field_name: program_area
   preset: preset_value
   default: Family Medicine
