@@ -37,11 +37,12 @@ def user_show_me(context, resource_dict):
         ```
 
     """
-    auth_user_obj = context.get('auth_user_obj')
-    if auth_user_obj:
-        return auth_user_obj.as_dict()
-    else:
+    model = context['model']
+    auth_user_obj = context.get('auth_user_obj', model.user.AnonymousUser())
+    if isinstance(auth_user_obj, model.user.AnonymousUser):
         raise toolkit.NotAuthorized
+    else:
+        return auth_user_obj.as_dict()
 
 
 def dataset_duplicate(context, data_dict):

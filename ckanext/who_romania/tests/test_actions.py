@@ -44,7 +44,17 @@ class TestUserShowMe(object):
 
     def test_no_user(self):
         with pytest.raises(toolkit.NotAuthorized):
-            call_action('user_show_me', {})
+            call_action(
+                'user_show_me',
+                {}
+            )
+
+    def test_anonymous_user(self):
+        with pytest.raises(toolkit.NotAuthorized):
+            call_action(
+                'user_show_me',
+                {'auth_user_obj': model.user.AnonymousUser()}
+            )
 
     def test_user(self):
         user = factories.User()
