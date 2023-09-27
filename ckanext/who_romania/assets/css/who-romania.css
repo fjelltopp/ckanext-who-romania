@@ -972,3 +972,39 @@ a.tag:hover  {
 .api-link{
     margin-bottom: 1rem;
 }
+
+.logs{
+    background-color: #e7e7e7;
+    font-family: 'Courier New', monospace;
+    border: solid 1px #b5b5b5;
+    border-radius: 5px;
+    font-size: 10px;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+.logs p{
+    padding: 10px 20px;
+    margin: 0px;
+    display: block;
+}
+
+.logs p:hover{
+    background-color: #f3f3f3;
+    border-radius: 5px;
+}
+
+.logs-reload i{
+    margin-right: 5px;
+    color: #008dc9;
+}
+
+.module.automation{
+    border-top: 1px dotted #DDD;
+}
+
+.module .automation-function{
+    border-top: 1px dotted #DDD;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
