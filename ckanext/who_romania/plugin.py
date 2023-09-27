@@ -11,6 +11,7 @@ import ckanext.who_romania.authn as who_romania_authn
 import ckanext.who_romania.upload as who_romania_upload
 import ckanext.who_romania.validators as who_romania_validators
 import ckanext.who_romania.helpers as who_romania_helpers
+import ckanext.who_romania.blueprints as who_romania_blueprints
 from ckan.lib.plugins import DefaultPermissionLabels
 
 from ckan.common import config_declaration
@@ -27,6 +28,8 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     plugins.implements(plugins.IResourceController, inherit=True)
     plugins.implements(plugins.IActions)
     plugins.implements(plugins.IValidators)
+    plugins.implements(plugins.IBlueprint)
+    plugins.implements(plugins.IConfigDeclaration)
     plugins.implements(plugins.IPackageController, inherit=True)
     plugins.implements(plugins.IAuthenticator, inherit=True)
 
@@ -61,6 +64,33 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
         """
         config_declaration.normalize(config)
 
+    # IConfigDeclaration
+    def declare_config_options(self, declaration, key):
+        declaration.annotate("who_romania extension configuration")
+        group = key.ckanext.who_romania
+        declaration.declare(
+            group.lambda_ckan_url,
+            "https://wrc.fjelltopp.org"
+        ).set_description("CKAN url for lambda functions to act upon")
+        declaration.declare(
+            group.lambda_family_medicine_function,
+            ""
+        ).set_description("The family medicine lambda function name")
+        declaration.declare(
+            group.lambda_family_medicine_template,
+            ""
+        ).set_description("The family medicine data reporting template")
+        declaration.declare(
+            group.lambda_family_medicine_users,
+            ""
+        ).set_description("Users (other than sysadmins) with permission to invoke")
+
+    # IBlueprint
+    def get_blueprint(self):
+        return [
+            who_romania_blueprints.lambda_blueprint
+        ]
+
     # IFacets
     def dataset_facets(self, facet_dict, package_type):
         new_fd = OrderedDict()
@@ -85,7 +115,9 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             'dataset_duplicate': who_romania_actions.dataset_duplicate,
             'package_create': who_romania_actions.package_create,
             'dataset_tag_replace': who_romania_actions.dataset_tag_replace,
-            'user_show_me': who_romania_actions.user_show_me
+            'user_show_me': who_romania_actions.user_show_me,
+            'lambda_invoke': who_romania_actions.lambda_invoke,
+            'lambda_logs': who_romania_actions.lambda_logs
         }
 
     # IValidators
