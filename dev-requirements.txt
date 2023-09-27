@@ -1,3 +1,5 @@
 pytest-ckan
 zxcvbn
 mock
+pytest-recording
+freezegun
