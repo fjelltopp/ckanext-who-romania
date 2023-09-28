@@ -9,6 +9,15 @@
 {% block promoted_toolbar %}
 {% endblock %}
 
+{% block page_primary_action %}
+{% if h.check_access('package_create') %}
+<div class="page_primary_action">
+    {% snippet 'snippets/dataset_selector.html'%}
+</div>
+{% endif %}
+{% endblock %}
+
+
 {%- block content %}
     <div role="main">
         <div class="promoted-background ">
@@ -23,5 +32,6 @@
     {{super() }}
 </div>
 {%  endblock %}
+
 
 

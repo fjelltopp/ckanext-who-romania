@@ -1,0 +1,467 @@
+interactions:
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTM1NTM4Wg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVINGFDV1YxTFhkbGMzUXRNU0pHTUVRQ0lBeGJhVXBteFFUT2p2cGJh
+        OXFWVVRtTFZtdWlqV3d1UVRjOE1EdnNXdjFVQWlBV0sxRCtteWQ5WTNkb0gvOCtWSmx3eVRaOHE1
+        WVRJbi8yMXhKYVpuVkwzQ3FXQXdoM0VBQWFEREl3TnpZeU5qZzRNVEU1TVNJTTRhbWliK0ZqcE9Y
+        Q2VQN2RLdk1DVVpIRDBNUjFXZmh1bkdLREpBbmMwZWcrKzB5L2hMMC8xYysweGoxbUV3K3ZVSHVB
+        VkM2RDQ4Znl4NUhiK2JqaGN5RjVxNnBzNDJRNzczMTE1clVOMGNzVjIzNUJJandlVVNTZTJpd1RH
+        NUExb0ZLWHBscC9GWmNralo2KzV5TGRWcmx0ZWdueEM4b1lBZkpOeU9xMlMrak5CeXBncWtLMEJm
+        MTJVZkIwMXZ4RCtyeDFOZTVZRWkvWVdBT2V1VTVTMm5EdlJmYU9POE1GMzBNREZvcDJTbFhld0FZ
+        dXFxZ3FINUZtTC9PNjBUcFBQTjVDVENnZmYwNFRvZjFnRjFDRE5XTzJXVnhoVmFHaEsyUnE3SkZl
+        Rm9sQ0JRbEg3TEhOZlZveFpraDlqS0NLbFRMTXhwbEFRS3orY0RuN3F4dTdVSlFiK1F6TVIxSGk4
+        VDdkT1k3S0NVZUxnOEQzeFBpYzNhOXBmeDVHeEhaSUxwTHBIYTl5MHhKaWpPay9JSlhodFRzeTBa
+        Y3g1VGlHQmVWR09QaG9zUjRsS1pUNDdhcHQwL1JaVlFLMUw1b1hJakRjNitMWlJVM2RnbVFKWXJ5
+        V1hIUFk5cG1XL0xrNGlYTkJLRFE1cVJRcnRiMEV2bmpabTJWaWRtK1BpR2E5NHBndzJjWExxQVk2
+        cHdFazNnZXk1Ty9VZXFXZUFiUUJMcFdpYXpWNWpva3dWcW5nN1pnTm4zNjZPY3UvcWNnSzJkRDNq
+        emdMVVREV1pwdTlqdzBGb2pzbng2ekszSlJQdU00QzVXTTNFTWVQS0lwYk4yZVFrbk9SUDVSalpi
+        VFNSeDF0dHpoc3hHS05wMkZRc2c3UGI0K2xQT1BTT0NXbXpEeXFNM3NSTzRMdDBONmwzaytRZndN
+        b0pGNURHdi9jRk15K3lyUHgrY2xlRkEyaUljaUhLcG9uMUNreHl3bnVGZ1VDWGRtd3NqZkR3QT09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzlmOGEwN2YtNGE2Ni00Y2QwLThlNTYtOWFiYTIyMGUxNzhm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Tue, 26 Sep 2023 13:55:37 GMT
+      x-amzn-RequestId:
+      - 7c6624a8-7d74-44ba-bf34-51971d964afc
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQxMjQxWg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pITUVVQ0lEVU9zSFdyU0JlUWhxTTFn
+        amlkcVlmeVRJTFlRei9rUGc4emxQK2tXRGpsQWlFQXpuUkM4YjhZUmFxRnJ2eEluemdubDBRRlFV
+        N3VYWVJnVmJENU02RC9FN01xbGdNSWR4QUFHZ3d5TURjMk1qWTRPREV4T1RFaURFdzkyMFF1TXow
+        Q1U0SXJqU3J6QWllUXRGK0s4ZUVUNVFCdWZ1Q2x2dXZaYTE5U1JzZ09nL0NHRHVRQmIwQ3JHYnQ2
+        T1g4WTJ4RURuZUFMN0RpSkxnWlFybkJiNXNwSTBoVFBEdkF3clQ3ZTVQcE1MS1pCWS9HcUNLeUho
+        RUpLc3RjbHRQMXBzTWgycGhrUitsaFpUWndPT2RsenI0RGpLTVZvR1NIVDN4VDFkOUtyTTlOL3R0
+        aWRQM1ZSdUltNlBobUFFZ1NwQm1EMEc5ZmpGdVA3RlJ6TWswSEZFckM5SWRvUG1tajJzVjNEOFlG
+        UUtEWlFwRTQySy92eDVTNUMxaElDMVhIUDdXa3dBVXNYQUVzTkRzUWJzalZHUHVZazN4ZUZCUXUx
+        dEljbXFXbVJkaDVqdmtRZFhjcE9jellsS2o3WGhsZEJtcXZoYWp3a0RpU05JNEJIeEIxWE01cGJm
+        dWRzSEg2VVJ4UjlNQWlRUW1wdVVSSFg2SjRETStjd1YxbnJpci9UbVR2TzNZMFJjRHZvcTd4WXp2
+        Ly9QdHlvQVRuM1ovbk81d05vbzV4Kys0VWo3YzZoSCsvR205UGxISEJoUlN2YUlMYUlNZXU4M2ZR
+        ajJkcFZOZCs0Ymxra3VlL2Z4d3piZHJINFZDQUo5RVd3Qnh1cEN4KytZUVcvcGlFM01Oak55NmdH
+        T3FZQkpNTzlkSjdMcC84WUgyaVRHUS9wYlNEYjI3VjFyRE9VcTVhb0h0QUt2RnMyMGx2VW9RY1Ns
+        c3dTMGpnK093VEFFVFZjMERQV2E5c0dQZEN5d2J2c0RUbXRKbFJvV1o4dkx0eVFoVXY1YkN2VEo2
+        VCtnNnBBelFVdnRYNFNDdTFjRElkZXEvaHVQRUFmQ3U4ejluamwyTWVteldaUnpIdUEva0g3SjRN
+        UkRGQ0l2eE93L09yUEpRWUVudjk0WVFXcDRhY0U4c0hhUUFtM0xBWnNVUFh5cnRCQUI5emVtUT09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDIyZGU2N2YtZTFkOC00YzMyLWJhZTAtNjRhZDE3ZmUyYmVh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Tue, 26 Sep 2023 14:12:41 GMT
+      x-amzn-RequestId:
+      - 97e62500-9b5e-4fcd-85f0-c968489c803c
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQyMDUxWg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRQ2ttM0tXckhBTGw0cWNI
+        VURTbUUwanZRYngzclNlbldRU3dFVTM4NkdwRmdJaEFJdnRYUkFBNGpPOGN3SWJYZEFmMHFuZDNJ
+        VEFiL1dBNS9SQ3Q3VHl4T05kS3BZRENIY1FBQm9NTWpBM05qSTJPRGd4TVRreElnemxtOEpvOFhB
+        Qm13bW81ZzBxOHdKQllhODhweExYOXIwYUtrYVlLc2JLR1E2L1JhT0xZdVFHMVl5NnJXc0M5eUt1
+        dTF6TGw3N25MaG1WZUpsdzRDeEY4L094U09DdXk5dG1BVXdBTHhSUjhVd0MvWFhPSE84SFJsU1VQ
+        ejdZSmhrZVFQUko3MkVtQjE0dm5GeERtcE9xUStDb2UzeE1BeTBMdHMzMnptVVAxMmtEVVB3SUN2
+        T1k5YWMyWlI1aWVoSlozSU4xMW9rbVNDeVBHeXVoK0tRT2krdEdLMTg5eDlaMnFDNlNvK0JCZ2g5
+        M2JmaThwNEFWVlV5MjdrRy9GNUp5MzhoS2lLR09pQllWcTVoWUhJMEN1RUhheXZQWHpFSHRqU3RQ
+        V01RYUJDd0VwKzJ4aXJ2NDZ3Wm5ZRm9NdW1iTEdROGFpZHN4TWczeXBUYWxnRjZ2RWNMcGVxODdn
+        bGdEQml6NlhERFhGbFFZckFQVFduSVFadVZHb1ZHMXhJRlRjUDlRY3k5M2tCaVlIeXlNTFB5bi9m
+        cVRzVCtTRWxOZFptQk5oZDZRaG5ta2J0bnlzTzRvMXl0SmJEVUZQYThCOEw2RDY3bCsvWEU0RTZC
+        dnRKamVPQnpTU0d1UGRna1JCYUFLSUExSlBKU29KL2xQUVJtSzhDVXBHcEFXNGVLQlVEREMwY3Vv
+        QmpxbEFhZHhpeE9XZ1FML3l3c2VjQnMrQVV2Z0M1VUlFZlU3bXJGMTJGNjdDT29TU2ppNEYwN0VZ
+        YVpka25Eb1lNN21pYzhCaDJJdWpIcmJnZ2REMXV3aU92SGZrdVFDVzhrWndDTU5zang0UjB6Tm5i
+        VUJrUUpTZzVPMkFjQUJOdjEvbjViREZMc2dOVzZIWkZBOGlVQ0JSOGpkcDFHZHlHSUlsb3dWcHRw
+        d3ZiNFhhNkFaN2hZZjR6VmJ0MVdDSUtaZCtDZUw0Vkt3bkxVZXpjbjVQY3ZqRm1lVkRVbzFYZz09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NzBkMmM0YWUtMWZmMy00ZWY4LTlhODYtY2IyNDZkZjEyMmYy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Tue, 26 Sep 2023 14:20:51 GMT
+      x-amzn-RequestId:
+      - 2026745c-e8ec-4b2d-afbf-35618a0844a9
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQyMjU5Wg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pITUVVQ0lEQW1VSk10elJIci9mL1Rk
+        akVhb2FaSXd5SnViQzNsSStWQVZLenVHVitRQWlFQTdqYmxPNHZYWDhGT2tzZFoxSmRGc0RtWVBx
+        N0xYNXlFQTFLaXNaZmRzSzBxbGdNSWVCQUFHZ3d5TURjMk1qWTRPREV4T1RFaURFSGlOUmJySkdy
+        ZldQZGc5U3J6QWxrd1NLek9VeVNJRHBpazN6cUtGa1V2aFozckI3Mk44SnlWM3Y3Q3kwem9xd0ZZ
+        dTJDQU9NYzlLd0NWWDdHeDdoWlVEY1dINmRuOXVGLy9EVSs0MU8vMW1JTWRDeUZwS0UxNlNNVzV5
+        UVZ0NlY1Mk9kNjI3cklCS245b0Q3OFRzSXFxbmZLZVhqNWp4RTZBWmlhZENJZXhwM09yakZBK3Bw
+        RFF4MUtaWnN1dVBZb0UyNGlGTjBseDZ6bUZxMzJ2U2xCaEs5R3ZvRWx3VEtSS0g3OEJvY05VczI2
+        clE3TlBhRzF3bkNXVU5Uc1A3NjVxN0QwZVNzemZldG14UFdqejN3VjNubWhXZmdlMjcyWUxza1Nr
+        eHdWaGxKb3VkbnhUeWl0VzNZRkljUjl0UlZKYUlEbTJ3dDIrWnFkeGt6RithVTBHRThabUdIZUU4
+        dkVCZDdmdWJGZEw3SS9Id1MzZWpjSUtDUnRSTzdLOEI3aXFWZ21jQ0EzQXdlTS83RnE4NTZtZnZr
+        LzNSSVpkWkEzT0VsaXRkWWpWa2RlZUE4a3Q1TFdpa3J2czRFTElEdGcwVFRzNzlMTHBPMVZvRWk3
+        QUZxQzRxaTB2UEFpZk1RQ3JxazVtaTRBR3Y4M0RUczM5cDQrY3h2M0Vac1R0T1ZXZU1NTFN5NmdH
+        T3FZQk1yNFNreHJ3eERxR1R6cnpabHBHTWdxMTBNN3FvOXIwS0xGUEh1eStyRGIwVXhVNjVuOVpQ
+        ZWpMMVVpSXVGK0sybUlQa3J1TU55Z1lIbGxOUmtSWWlscDI1SnBxRWFPRFlrd0ZTdkVvaUpHdmZ1
+        TU9jNVg5NDJPV0k1OVE0TWVaaXpVNTZlWWtYbzJvblVWaG83TmN0dFBaSDc1QmlZTExjZ1BibUNZ
+        TTJwODBFRzQrMTJkVDVRVE9Zb3VNKyswNklhc3dQK3VNZzhEM1FEek14bWxmcFhBV2hheE1EUT09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NDcyZDUwZWYtMTFmMC00ODQ3LWE1ODEtNWI2NDBkZTU5MThl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Tue, 26 Sep 2023 14:22:58 GMT
+      x-amzn-RequestId:
+      - be657946-d6a2-43e1-b73f-6ef734654ef2
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTYxOTIyWg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVJSC8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pITUVVQ0lGRkx0
+        UnZ5S0J3d21wRHBMcEtCSUdIM0liUUlDRVV4aWsrcUw2bG9qYk8vQWlFQXIySUhYUndYLzN3eXYy
+        YVZ4M0xOUFJibDhtcGYzWHVHTEFoZWZzb3RURWdxbGdNSWVSQUFHZ3d5TURjMk1qWTRPREV4T1RF
+        aURQTGJKVHRsSlQyOWZPS1JFaXJ6QXQ5bUhkZnk1bTdERkJUb05kNVl4Ym1Cd2dHN29QVXZEUjRP
+        RUdHSWw5VWNVaFFLQjR2a0lQZjAwY3hNWTFENTRNeDFVT3R0bXlNS2ZNT3E3NU1PVDA3QzNEYSto
+        UTFsNWdVU3VIODUzSFdZOUpxNEJ5enB0bVZpYjhQc2thVnhhQjNiejdWUlEwdVFZOFZCOVlwbjUy
+        dzlpdkVaMCtDbWlmREZ6VDRVUCtwZm9DMnpJWFRDaVVNeUZUNlBJcVo4dHRuODdZUVdOa2llQ2hi
+        RWUrWk1KM29iZEkrb2cyYzI5NFNHQmc5b3pCcE1pSDJvenpZeEJzM0MxWHpTdjBVOWVneThZSGQx
+        RnJYeG9XdzV0Rm5abHcwQjkzM0RYMjc0bUpYbGZqeHdycGxWcTR4MzhXeHR2d2RoZU45M1JtbStX
+        WGV1RUpkeC9JNXkyRVFhVHlDOTVDU2Vqc0JrdHlBcjNBZHVrRS9YMFR3L0VqVEVBNTZmNnNFUFJD
+        Q3FHZy9sdElFeFNvMmovOGVnUUtOVnVGcDc5L3JWVjBaTVNENDVBMjNEYUFuc1VxR1dHNDJBT0xZ
+        bHV3WVhhRTNhblNhbTFRK3puWlNwMEtSWnd5VmNxeEtlSHJGeGZaTHUyb3huUk1mTWdxTHRRbjgr
+        Yy9pU01JbUp6S2dHT3FZQnE4Y3NHWEtUZ0QvUU80WnduWWlZeUZwUDlxMFBXNE0zS3lncU1JUEMw
+        WDdkOWtBaGpvK2VYN1NsR3l4bGlpc0lLaHp4aWs1RWxFQ3ZBMmhPSEd3WEtKMUIvVVRQeGM2akdl
+        TjR1VUpIS29ZQVBpQ2tSVHFpeWNrampvSDRLS3QyWlhEVjMvUTlSMTFKaTlDSHhkbGk0TllLTDE4
+        U0JFaWt4VjJHTTNGQ1E1SDZFTnZLWjc5ZUQzVXVIaXdoaVhlM3FjS1VlbXJDendPcG53ajZGMUdL
+        MlNMUWo3azg5dz09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        NWU4YmUxNzUtZTVhYS00ZThjLWI1ZmUtZDJiNjZiZDA2M2Zj
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Tue, 26 Sep 2023 16:19:22 GMT
+      x-amzn-RequestId:
+      - 4b132020-8f46-4fec-b75f-f42414807844
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTQwMzAwWg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKYi8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pHTUVRQ0lEOHZU
+        dUl0SUd4ZS9UUVc5endWM1dqNm83SzZRdTJzRlZRWXVhd1lHZ1RWQWlBUlpSVHJnT2RaYzFNdm5s
+        RnI5V2RheTA1VGVkUTJCSGFmeStIeXZZR0dqU3FmQXdpUC8vLy8vLy8vLy84QkVBQWFEREl3TnpZ
+        eU5qZzRNVEU1TVNJTVNVcDZIWFlsak9PajJBVEdLdk1DRHNMR3RpcFFTODRFbk1nSmRWZ0Z4dVdo
+        c1YzeitPZWE2T0xYMjJHSnNqOCsxUm9FZzRUYVhCbzF6Q3NUb0tSdThuRXBONGE5Z25SWXVKd2Rt
+        R1Jqcm9pTm9xSUtwcnlVZERpWEJjY2VscEgvSUp3cGRVWnJJNmk3YUJ0MmJqeFVXVlkyeG9mMUs1
+        bWdBQUx2cEVPMFU2Nk9XMCtMUElXUlJZZGQyQ08xWEw0aStGbWtHbHlFR3o5OTd2TVhaekx2SnZ1
+        RTNBVnVEQXVaSm5Rc0I1WE0zS1pkbjFtZEhXckxHSUpNV0xtWkFsL0NhWm9IcFBmVk1aZU43VVgv
+        clFISk1TYm1SSHhRbU5wSlZYdllwcGtTK1l1WVNON3ZBY3BXMVpydVNiNUdlQzd1dzdDd2cwUW14
+        R1FPUnF5TU1nOGNSc0NzTitxbGhtRk5VNTd4UlF1VDFqS1AwTGNXczdWbDZIb0lxVitqc1ZPR211
+        a3oyandQc1RrTVZZbDc0WjNRZVcvajBiZnlXN0dUZFJrdjF4ckJJZlV5WTVha015RlJEM0JkbkNx
+        bXNqVnNXOXZVbFROWDZqRVhaMnZDdDV2THFjR2gzcjBFb0ZmNTFZNmI1eXNEcUUyRVVMK2toUzUz
+        Tk9zcGxodnhBQ0RNd0Zvd2tPelFxQVk2cHdIR3lZMHhrOXFYeUlacDVaM3ZNQmZRdzlyOUhCZkZE
+        dGZMUURIQ2hxZHJCUUVHYk41bDNaK3ArSS9RTEJDTUtsd0ZRZ28rZkVCTndTcTNNL3ViM0NWS0NP
+        YmNJeCtBSWc3WVZMK24yczRHZi9tQ1dja3p5QVRnb29QTXRwdFRROWdoZ2p1Yitsc0RDQWE1MGJ0
+        STlUNTNocXlQczltbU10cVh4a1o1Y1UxSXhOM0M5c2NlYVVLRVI5UDNCamxJeVQ4RlNRa0dEZnNi
+        aFJkNzJEZFhLTTJaRnFBY3llcG1aUT09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        OWJjN2I2MzItZGZlMC00MGUwLWJjMmYtMTJkZmQzNjM4MDBi
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 27 Sep 2023 14:02:59 GMT
+      x-amzn-RequestId:
+      - daac592c-9f01-42f8-9a65-c074b2bb1cfe
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: '{"logGroupName": "/aws/lambda/Bad-Name", "orderBy": "LastEventTime", "limit":
+      1, "descending": true}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '100'
+      Content-Type:
+      - !!binary |
+        YXBwbGljYXRpb24veC1hbXotanNvbi0xLjE=
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTYyMDAyWg==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKbi8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRQzNZ
+        K0xmSTFhYUVib0NJSkI1VTBsQksyMXA1bmhHRHVzMko1VE5xMDZ6bndJaEFNNEhzY00wWkFPblVo
+        Szh0dXJ2OEU4V3REZVYxNUtxSUlqYVZxc1o2ZnlPS3A4RENKSC8vLy8vLy8vLy93RVFBQm9NTWpB
+        M05qSTJPRGd4TVRreElnenlLd2VNRElLRmRZNy9lazBxOHdMRnp0UTRMN2hqNkI0RGZBL1NQeWJS
+        eW9YTi9yTUxoMXlDem1qZjU5c3JZYm1KNnR5OThKTFYreG5ndFIxWEFjaVBUMDRJUm5WVmU2NXpS
+        Q2p3ZGxRdjNMb1JRd1FwU3NBV3dtL0x3czRBbnRnaWtSZ1pubmhTaGlqK0ZWSHAxK3l6MGRGU29z
+        ckhISFh3NVNEWEpLQU0xcURtNTUzbldacG85dHhwUlVqQkFvVmtuRTR3dHVKbWppd1NvRVo3SlhQ
+        aktyTUNUVXpmRnF2cnA1Qks3MUdkWXlYaXU4RDhLSEs3ZWtBSUVxamN4ZzN0SElVU2dCZCtxV3o3
+        a0w0RkxIQjV2ZFlTb2p2cFZLallRTDZjWWlXTEgwa0ZRdkx1OFJpdE9ITkh5cXBtbmhiTlB3QmQw
+        ZExvOWxUMzZOWGlSVkgxb0F3cXNEZmd1WHUxZTQxbWN6Rk9icGs4cndnd0NrVmllaDVrWDdWZlhB
+        eEdhSjllYm12OWZoT0RNbWhQSWc2aVFXOXNuZlozZEtpRk1TbHI4V1hhR0N4ZEhlU3J3R0JzdW9H
+        eHgxcTFyb3FiSWdWdGcyZkxkSVh2NE42SmlFOHgrVzd0UmliU2pENjNZakk4VHFwSVVocXNMTmQ5
+        TTRwRHVhTTFDNHdrdWpaUXB6Q3hyTkdvQmpxbEFkL2V2LzVuMUhaWmwvdGhBaDNHRW1kc1lUV0R3
+        RERYVzJ6MVpDSDl1Qkt5cE01QzN0MVdHNHBzWk5mbkkzcm1ycVR0NmowWnZkR0w4b2JReVlpTGVX
+        VGhrNmNsNCtwMDBxNlNFRk5KbWZWcGlIbUxZK2FUT3RSUkhSdU45U0IxTVIxUTExNzBWdWsxdE54
+        VFhPRThaVkphZ3d0c3BBN25rajRwSG1iRXRDN3hWWUZkWGltYSs5RjJzalM1ZDF6cnVnSGRsQUR0
+        bVdKMDdadVNQRFZ2N3V2a0QwVDVKQT09
+      X-Amz-Target:
+      - !!binary |
+        TG9nc18yMDE0MDMyOC5EZXNjcmliZUxvZ1N0cmVhbXM=
+      amz-sdk-invocation-id:
+      - !!binary |
+        MGVhZGM5YTctNzYzNS00OWNlLWIyZjEtN2JiNmZkZDQxNzVm
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://logs.eu-west-1.amazonaws.com/
+  response:
+    body:
+      string: '{"__type":"ResourceNotFoundException","message":"The specified log
+        group does not exist."}'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '90'
+      Content-Type:
+      - application/x-amz-json-1.1
+      Date:
+      - Wed, 27 Sep 2023 16:20:02 GMT
+      x-amzn-RequestId:
+      - e2c65be7-0405-45f9-b471-c36c3d529af6
+    status:
+      code: 400
+      message: Bad Request
+version: 1

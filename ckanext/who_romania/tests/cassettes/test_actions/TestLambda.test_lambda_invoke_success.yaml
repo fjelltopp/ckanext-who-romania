@@ -1,0 +1,1143 @@
+interactions:
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        OTdlMTdlNjctZjIyMy00ZTEzLTllYTEtNmQ3YjVjMTNmMWJh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVRMZlVLeXhHZ2NraXlwQS1CTzdReXlqWVFJVllFemJRZi1PX3dDWWtEeGotcGJh
+        eVJiWFFyeWQzNVFJQ2RyVnVSM19UaWk1eDJGR28wY0FBZWQwOk1HVUNNUUNXbFNPUlFFV2RISUp0
+        UklTZ3VBKzNJTis0c09ZUHpmUStCYzFwN3RJdEwzR2dVVFBEYkdyQ0Y5RUZoWG16WWpjQ01IbEtQ
+        ZHNLUzM0MHNtbkhHVjZ2NEphbFUzY1E4SnJ3cnc3aVhUandvSDB0T0VKSXBNR2x0WGREMEN1cE5m
+        MTMzUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCTY7KZDAO5","secretAccessKey":"MnTbE7G9hCZ5EGrcV3Y6DwSaNPUv5D8znYCFMSGt","sessionToken":"IQoJb3JpZ2luX2VjEH4aCWV1LXdlc3QtMSJGMEQCICb0wPuHwRU1nMUGogEVJ92ojVL3KQraVqAf+dkstw0XAiATatQofOml5N9v4jPv/Bvtd66KTOnBY2AxoCovwKg/fyqWAwh3EAAaDDIwNzYyNjg4MTE5MSIMhc5AKYI+f7yohVaDKvMCAHqT6krfHCcL0KBUPcSRMpco3CGU984Qkwq/UyBe9lxVBkaWYeq6k39Ek5azQUyASYKR+PQmBOu74HY3x8FYtDRA3wDsRmkGv+YmZYXYzwEOKPnIQTLTUT45j01UIiIjA6IDIEUFoiml4XahTEyByyreD/OVvoYKJ+MJgVCIuI3WreuVJxfD0crd5AailYsFR1SoplwYEvleHMFsLxzf5UkuFYWQV0UySaX3AyCaqZx+m+A/0OMYZ1exiT6+MmHUxVupjVEfBd79W+Cr1Fl0Nw2VJF2+5gCOfR72X0bQp1RjNz4v8iZNIQYrc1AUAU6sasMO6STK94gTiH39zNLWckFl6O58oY6sFy9bE8jWOWBWCnWX3eLFDFsiG+A93zecokoDC4HsO8GL5ZEPKMtNA3B0+/SADha0Fm2o1EEpXha+D6hAoone59SVXuHOkbe8xiB8LnPhgVc0hlO6un86y2c+FMFVBG0U6oKE4X+EAbr0bTsw4svLqAY6pwEbPLCWdy8sJl3LXOREW4LIddrde05+Zoqs4vXOLazOfarcFdWJTZIJX8WO4m5xC6uLdU0d11tdPfaPDkGa1Dk4Ho8DQv4mFYkBbUZ6e5gzdHWeJ5u1mXIP99cCZh9aO5njQD2+Tl0rmVfgBHSqdcwO+6hfiPVEEh4ms+3gGKlSKwZtQnDN3DluTWOj5bebNZEri+hn5oGz1yzeeStopaVZvQmn2WMnTg==","expiration":1695780513000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1076'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 26 Sep 2023 14:08:34 GMT
+      RequestId:
+      - 472fe739-6542-428d-8db8-4ac45dc740e0
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - 472fe739-6542-428d-8db8-4ac45dc740e0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ckan_url": "https://wrc.fjelltopp.org", "reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQwODM0Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVINGFDV1YxTFhkbGMzUXRNU0pHTUVRQ0lDYjB3UHVId1JVMW5NVUdv
+        Z0VWSjkyb2pWTDNLUXJhVnFBZitka3N0dzBYQWlBVGF0UW9mT21sNU45djRqUHYvQnZ0ZDY2S1RP
+        bkJZMkF4b0NvdndLZy9meXFXQXdoM0VBQWFEREl3TnpZeU5qZzRNVEU1TVNJTWhjNUFLWUkrZjd5
+        b2hWYURLdk1DQUhxVDZrcmZIQ2NMMEtCVVBjU1JNcGNvM0NHVTk4NFFrd3EvVXlCZTlseFZCa2FX
+        WWVxNmszOUVrNWF6UVV5QVNZS1IrUFFtQk91NzRIWTN4OEZZdERSQTN3RHNSbWtHditZbVpZWFl6
+        d0VPS1BuSVFUTFRVVDQ1ajAxVUlpSWpBNklESUVVRm9pbWw0WGFoVEV5Qnl5cmVEL09Wdm9ZS0or
+        TUpnVkNJdUkzV3JldVZKeGZEMGNyZDVBYWlsWXNGUjFTb3Bsd1lFdmxlSE1Gc0x4emY1VWt1RllX
+        UVYwVXlTYVgzQXlDYXFaeCttK0EvME9NWVoxZXhpVDYrTW1IVXhWdXBqVkVmQmQ3OVcrQ3IxRmww
+        TncyVkpGMis1Z0NPZlI3MlgwYlFwMVJqTno0djhpWk5JUVlyYzFBVUFVNnNhc01PNlNUSzk0Z1Rp
+        SDM5ek5MV2NrRmw2TzU4b1k2c0Z5OWJFOGpXT1dCV0NuV1gzZUxGREZzaUcrQTkzemVjb2tvREM0
+        SHNPOEdMNVpFUEtNdE5BM0IwKy9TQURoYTBGbTJvMUVFcFhoYStENmhBb29uZTU5U1ZYdUhPa2Jl
+        OHhpQjhMblBoZ1ZjMGhsTzZ1bjg2eTJjK0ZNRlZCRzBVNm9LRTRYK0VBYnIwYlRzdzRzdkxxQVk2
+        cHdFYlBMQ1dkeThzSmwzTFhPUkVXNExJZGRyZGUwNStab3FzNHZYT0xhek9mYXJjRmRXSlRaSUpY
+        OFdPNG01eEM2dUxkVTBkMTF0ZFBmYVBEa0dhMURrNEhvOERRdjRtRllrQmJVWjZlNWd6ZEhXZUo1
+        dTFtWElQOTljQ1poOWFPNW5qUUQyK1RsMHJtVmZnQkhTcWRjd08rNmhmaVBWRUVoNG1zKzNnR0ts
+        U0t3WnRRbkROM0RsdVRXT2o1YmViTlpFcmkraG41b0d6MXl6ZWVTdG9wYVZadlFtbjJXTW5UZz09
+      amz-sdk-invocation-id:
+      - !!binary |
+        YmUzMTI3MzktZTZlNS00OTg1LTkzZTgtYjg2ZjQ5ZGMxZjc4
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 14:08:34 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6512e5e2-7120045700c8bc2561cd08c5;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 6521013b-0353-4991-90ba-405f57fa5549
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"ckan_url": "https://wrc.fjelltopp.org", "reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQxMjQxWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pITUVVQ0lEVU9zSFdyU0JlUWhxTTFn
+        amlkcVlmeVRJTFlRei9rUGc4emxQK2tXRGpsQWlFQXpuUkM4YjhZUmFxRnJ2eEluemdubDBRRlFV
+        N3VYWVJnVmJENU02RC9FN01xbGdNSWR4QUFHZ3d5TURjMk1qWTRPREV4T1RFaURFdzkyMFF1TXow
+        Q1U0SXJqU3J6QWllUXRGK0s4ZUVUNVFCdWZ1Q2x2dXZaYTE5U1JzZ09nL0NHRHVRQmIwQ3JHYnQ2
+        T1g4WTJ4RURuZUFMN0RpSkxnWlFybkJiNXNwSTBoVFBEdkF3clQ3ZTVQcE1MS1pCWS9HcUNLeUho
+        RUpLc3RjbHRQMXBzTWgycGhrUitsaFpUWndPT2RsenI0RGpLTVZvR1NIVDN4VDFkOUtyTTlOL3R0
+        aWRQM1ZSdUltNlBobUFFZ1NwQm1EMEc5ZmpGdVA3RlJ6TWswSEZFckM5SWRvUG1tajJzVjNEOFlG
+        UUtEWlFwRTQySy92eDVTNUMxaElDMVhIUDdXa3dBVXNYQUVzTkRzUWJzalZHUHVZazN4ZUZCUXUx
+        dEljbXFXbVJkaDVqdmtRZFhjcE9jellsS2o3WGhsZEJtcXZoYWp3a0RpU05JNEJIeEIxWE01cGJm
+        dWRzSEg2VVJ4UjlNQWlRUW1wdVVSSFg2SjRETStjd1YxbnJpci9UbVR2TzNZMFJjRHZvcTd4WXp2
+        Ly9QdHlvQVRuM1ovbk81d05vbzV4Kys0VWo3YzZoSCsvR205UGxISEJoUlN2YUlMYUlNZXU4M2ZR
+        ajJkcFZOZCs0Ymxra3VlL2Z4d3piZHJINFZDQUo5RVd3Qnh1cEN4KytZUVcvcGlFM01Oak55NmdH
+        T3FZQkpNTzlkSjdMcC84WUgyaVRHUS9wYlNEYjI3VjFyRE9VcTVhb0h0QUt2RnMyMGx2VW9RY1Ns
+        c3dTMGpnK093VEFFVFZjMERQV2E5c0dQZEN5d2J2c0RUbXRKbFJvV1o4dkx0eVFoVXY1YkN2VEo2
+        VCtnNnBBelFVdnRYNFNDdTFjRElkZXEvaHVQRUFmQ3U4ejluamwyTWVteldaUnpIdUEva0g3SjRN
+        UkRGQ0l2eE93L09yUEpRWUVudjk0WVFXcDRhY0U4c0hhUUFtM0xBWnNVUFh5cnRCQUI5emVtUT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDQwOWY5NzItY2JlMC00YzYxLWEwN2ItNDY4NWY1Yzg1OTRk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 14:12:42 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6512e6da-5d661bd329b2141046ade633;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - b3c8ba9c-457b-42a6-a3e3-13228da6e0c4
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        NGQ5YWI5NmItNmI3Yy00MmZjLWIyYTctMGIxODJmMzc1YjJk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVRMZlVLeXhHZ2NraXlwQS1CTzdReXlqWVFJVllFemJRZi1PX3dDWWtEeGotcGJh
+        eVJiWFFyeWQzNVFJQ2RyVnVSM19UaWk1eDJGR28wY0FBZWQwOk1HVUNNUUNXbFNPUlFFV2RISUp0
+        UklTZ3VBKzNJTis0c09ZUHpmUStCYzFwN3RJdEwzR2dVVFBEYkdyQ0Y5RUZoWG16WWpjQ01IbEtQ
+        ZHNLUzM0MHNtbkhHVjZ2NEphbFUzY1E4SnJ3cnc3aVhUandvSDB0T0VKSXBNR2x0WGREMEN1cE5m
+        MTMzUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCTSZVGQ2XX","secretAccessKey":"s0gAM1SlamMkLCDdACDvvqa9/VuOO0sdsO9oR3yR","sessionToken":"IQoJb3JpZ2luX2VjEH8aCWV1LXdlc3QtMSJIMEYCIQCL+A9adJb3CbpjxTYH616B+udEs8YaEKubt89Kn+73DwIhAOSbz3bcMSqFrhi9DONung/tb4wXNDMwVYpc7170XD/pKpYDCHcQABoMMjA3NjI2ODgxMTkxIgxR34xHE5VZMxvt65Aq8wKiuoH6trKaxH6vj30DeufHpFBwzIXJiv3ibHiNud7wV7/f+3MWrjMEXHLS55epFEQ1dpZTREl9xyLEAefq2cQO7WP6tS5Tn+2K9lWd7iULTI2Ikcjnfg+fbv1VbpGrWYGBb2cH2RjBqzyEwTCnW0KsSv2879g0kVTnBMICg9hFmuVRrTVYc4Ui9fxaG97ced9T/hEqJMiezGp0MzPtiUT6URNIQC2u6aIE6S43De/A9TCad7UXDu9oeE5b21jzwizg7c7mJ0p/Lynn9zhf5EIjqu+qeiWFlSRplUj5BjFdcIsAqMwld/ULSpBZFm0L2Hnnhbqe/nBjmD1KmlCcTOBqpMHojyZyRMNg/sRfFqJ1A147i9Fe5Ce9U+DozYred9GEcCpTEYGBVJWahhYVe/bdAwsI6z0yhpJrUoAwaXyBdXKXwC7fjj/BexrxkvO9+Yn5hq1uHpv+xZPlcc98XaFs2JRmLTt+L62xXK/tIglFeXxYRzCRzsuoBjqlARBmLkwmis71G730LeZo+3WAEEGkIEdS1/lfomFEnBxkN5bXikCdMqBwGjwmWG8nJb9av+2o16lfj6D/SyHQbjiJ01F7b86EYI0ERYaQYoPRXb5UBJLrL8n/tT2zc7n3IoxFZmwjfpC3vmfSHwFXMujzgrdHbbezFzFA4SPzzcyYvX4wBY8BjS+d6Z6Jl0d2+SP3Y0tEZQo3yfzrMWur0Ru4sj7ADg==","expiration":1695780816000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1076'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 26 Sep 2023 14:13:37 GMT
+      RequestId:
+      - e2cd9f6d-f408-4ebc-b3ec-ee1abf5c8003
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - e2cd9f6d-f408-4ebc-b3ec-ee1abf5c8003
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"ckan_url": "https://wrc.fjelltopp.org", "reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQxMzM3Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRQ0wrQTlhZEpiM0NicGp4
+        VFlINjE2Qit1ZEVzOFlhRUt1YnQ4OUtuKzczRHdJaEFPU2J6M2JjTVNxRnJoaTlET051bmcvdGI0
+        d1hORE13VllwYzcxNzBYRC9wS3BZRENIY1FBQm9NTWpBM05qSTJPRGd4TVRreElneFIzNHhIRTVW
+        Wk14dnQ2NUFxOHdLaXVvSDZ0cktheEg2dmozMERldWZIcEZCd3pJWEppdjNpYkhpTnVkN3dWNy9m
+        KzNNV3JqTUVYSExTNTVlcEZFUTFkcFpUUkVsOXh5TEVBZWZxMmNRTzdXUDZ0UzVUbisySzlsV2Q3
+        aVVMVEkySWtjam5mZytmYnYxVmJwR3JXWUdCYjJjSDJSakJxenlFd1RDblcwS3NTdjI4NzlnMGtW
+        VG5CTUlDZzloRm11VlJyVFZZYzRVaTlmeGFHOTdjZWQ5VC9oRXFKTWllekdwME16UHRpVVQ2VVJO
+        SVFDMnU2YUlFNlM0M0RlL0E5VENhZDdVWER1OW9lRTViMjFqendpemc3YzdtSjBwL0x5bm45emhm
+        NUVJanF1K3FlaVdGbFNScGxVajVCakZkY0lzQXFNd2xkL1VMU3BCWkZtMEwySG5uaGJxZS9uQmpt
+        RDFLbWxDY1RPQnFwTUhvanlaeVJNTmcvc1JmRnFKMUExNDdpOUZlNUNlOVUrRG96WXJlZDlHRWND
+        cFRFWUdCVkpXYWhoWVZlL2JkQXdzSTZ6MHlocEpyVW9Bd2FYeUJkWEtYd0M3ZmpqL0JleHJ4a3ZP
+        OStZbjVocTF1SHB2K3haUGxjYzk4WGFGczJKUm1MVHQrTDYyeFhLL3RJZ2xGZVh4WVJ6Q1J6c3Vv
+        QmpxbEFSQm1Ma3dtaXM3MUc3MzBMZVpvKzNXQUVFR2tJRWRTMS9sZm9tRkVuQnhrTjViWGlrQ2RN
+        cUJ3R2p3bVdHOG5KYjlhdisybzE2bGZqNkQvU3lIUWJqaUowMUY3Yjg2RVlJMEVSWWFRWW9QUlhi
+        NVVCSkxyTDhuL3RUMnpjN24zSW94Rlptd2pmcEMzdm1mU0h3RlhNdWp6Z3JkSGJiZXpGekZBNFNQ
+        enpjeVl2WDR3Qlk4QmpTK2Q2WjZKbDBkMitTUDNZMHRFWlFvM3lmenJNV3VyMFJ1NHNqN0FEZz09
+      amz-sdk-invocation-id:
+      - !!binary |
+        NDY1YTJiNjgtOTgzNi00Y2IyLThhN2EtMzdjMmQzMGZmMWY0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 14:13:38 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6512e712-69641b5e0688984b3b2a7f8c;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - df2d39db-4ad6-467e-b7a1-7d6a472691e9
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"ckan_url": "https://wrc.fjelltopp.org", "reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQyMDUxWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRQ2ttM0tXckhBTGw0cWNI
+        VURTbUUwanZRYngzclNlbldRU3dFVTM4NkdwRmdJaEFJdnRYUkFBNGpPOGN3SWJYZEFmMHFuZDNJ
+        VEFiL1dBNS9SQ3Q3VHl4T05kS3BZRENIY1FBQm9NTWpBM05qSTJPRGd4TVRreElnemxtOEpvOFhB
+        Qm13bW81ZzBxOHdKQllhODhweExYOXIwYUtrYVlLc2JLR1E2L1JhT0xZdVFHMVl5NnJXc0M5eUt1
+        dTF6TGw3N25MaG1WZUpsdzRDeEY4L094U09DdXk5dG1BVXdBTHhSUjhVd0MvWFhPSE84SFJsU1VQ
+        ejdZSmhrZVFQUko3MkVtQjE0dm5GeERtcE9xUStDb2UzeE1BeTBMdHMzMnptVVAxMmtEVVB3SUN2
+        T1k5YWMyWlI1aWVoSlozSU4xMW9rbVNDeVBHeXVoK0tRT2krdEdLMTg5eDlaMnFDNlNvK0JCZ2g5
+        M2JmaThwNEFWVlV5MjdrRy9GNUp5MzhoS2lLR09pQllWcTVoWUhJMEN1RUhheXZQWHpFSHRqU3RQ
+        V01RYUJDd0VwKzJ4aXJ2NDZ3Wm5ZRm9NdW1iTEdROGFpZHN4TWczeXBUYWxnRjZ2RWNMcGVxODdn
+        bGdEQml6NlhERFhGbFFZckFQVFduSVFadVZHb1ZHMXhJRlRjUDlRY3k5M2tCaVlIeXlNTFB5bi9m
+        cVRzVCtTRWxOZFptQk5oZDZRaG5ta2J0bnlzTzRvMXl0SmJEVUZQYThCOEw2RDY3bCsvWEU0RTZC
+        dnRKamVPQnpTU0d1UGRna1JCYUFLSUExSlBKU29KL2xQUVJtSzhDVXBHcEFXNGVLQlVEREMwY3Vv
+        QmpxbEFhZHhpeE9XZ1FML3l3c2VjQnMrQVV2Z0M1VUlFZlU3bXJGMTJGNjdDT29TU2ppNEYwN0VZ
+        YVpka25Eb1lNN21pYzhCaDJJdWpIcmJnZ2REMXV3aU92SGZrdVFDVzhrWndDTU5zang0UjB6Tm5i
+        VUJrUUpTZzVPMkFjQUJOdjEvbjViREZMc2dOVzZIWkZBOGlVQ0JSOGpkcDFHZHlHSUlsb3dWcHRw
+        d3ZiNFhhNkFaN2hZZjR6VmJ0MVdDSUtaZCtDZUw0Vkt3bkxVZXpjbjVQY3ZqRm1lVkRVbzFYZz09
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZjAwYTBkMmQtYWU5YS00M2ZiLWI2NDYtYjI1NDlmNjZmMzFl
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 14:20:51 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6512e8c3-614dfaee06b5bd202c38ef8e;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - fec2599f-de78-4c79-9403-d9f886a18368
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"ckan_url": "https://wrc.fjelltopp.org", "reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTQyMjU5Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVIOGFDV1YxTFhkbGMzUXRNU0pITUVVQ0lEQW1VSk10elJIci9mL1Rk
+        akVhb2FaSXd5SnViQzNsSStWQVZLenVHVitRQWlFQTdqYmxPNHZYWDhGT2tzZFoxSmRGc0RtWVBx
+        N0xYNXlFQTFLaXNaZmRzSzBxbGdNSWVCQUFHZ3d5TURjMk1qWTRPREV4T1RFaURFSGlOUmJySkdy
+        ZldQZGc5U3J6QWxrd1NLek9VeVNJRHBpazN6cUtGa1V2aFozckI3Mk44SnlWM3Y3Q3kwem9xd0ZZ
+        dTJDQU9NYzlLd0NWWDdHeDdoWlVEY1dINmRuOXVGLy9EVSs0MU8vMW1JTWRDeUZwS0UxNlNNVzV5
+        UVZ0NlY1Mk9kNjI3cklCS245b0Q3OFRzSXFxbmZLZVhqNWp4RTZBWmlhZENJZXhwM09yakZBK3Bw
+        RFF4MUtaWnN1dVBZb0UyNGlGTjBseDZ6bUZxMzJ2U2xCaEs5R3ZvRWx3VEtSS0g3OEJvY05VczI2
+        clE3TlBhRzF3bkNXVU5Uc1A3NjVxN0QwZVNzemZldG14UFdqejN3VjNubWhXZmdlMjcyWUxza1Nr
+        eHdWaGxKb3VkbnhUeWl0VzNZRkljUjl0UlZKYUlEbTJ3dDIrWnFkeGt6RithVTBHRThabUdIZUU4
+        dkVCZDdmdWJGZEw3SS9Id1MzZWpjSUtDUnRSTzdLOEI3aXFWZ21jQ0EzQXdlTS83RnE4NTZtZnZr
+        LzNSSVpkWkEzT0VsaXRkWWpWa2RlZUE4a3Q1TFdpa3J2czRFTElEdGcwVFRzNzlMTHBPMVZvRWk3
+        QUZxQzRxaTB2UEFpZk1RQ3JxazVtaTRBR3Y4M0RUczM5cDQrY3h2M0Vac1R0T1ZXZU1NTFN5NmdH
+        T3FZQk1yNFNreHJ3eERxR1R6cnpabHBHTWdxMTBNN3FvOXIwS0xGUEh1eStyRGIwVXhVNjVuOVpQ
+        ZWpMMVVpSXVGK0sybUlQa3J1TU55Z1lIbGxOUmtSWWlscDI1SnBxRWFPRFlrd0ZTdkVvaUpHdmZ1
+        TU9jNVg5NDJPV0k1OVE0TWVaaXpVNTZlWWtYbzJvblVWaG83TmN0dFBaSDc1QmlZTExjZ1BibUNZ
+        TTJwODBFRzQrMTJkVDVRVE9Zb3VNKyswNklhc3dQK3VNZzhEM1FEek14bWxmcFhBV2hheE1EUT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        OGQwYTM4YjItOGQ4Ny00MzZkLTljNWMtNTQyMDBmZGRmZjk5
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 14:22:59 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6512e943-5853a0dd015dc042269da11d;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 69c7aa32-f939-4c92-8153-3ab5c3950b52
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrb.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTYxOTIyWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVJSC8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pITUVVQ0lGRkx0
+        UnZ5S0J3d21wRHBMcEtCSUdIM0liUUlDRVV4aWsrcUw2bG9qYk8vQWlFQXIySUhYUndYLzN3eXYy
+        YVZ4M0xOUFJibDhtcGYzWHVHTEFoZWZzb3RURWdxbGdNSWVSQUFHZ3d5TURjMk1qWTRPREV4T1RF
+        aURQTGJKVHRsSlQyOWZPS1JFaXJ6QXQ5bUhkZnk1bTdERkJUb05kNVl4Ym1Cd2dHN29QVXZEUjRP
+        RUdHSWw5VWNVaFFLQjR2a0lQZjAwY3hNWTFENTRNeDFVT3R0bXlNS2ZNT3E3NU1PVDA3QzNEYSto
+        UTFsNWdVU3VIODUzSFdZOUpxNEJ5enB0bVZpYjhQc2thVnhhQjNiejdWUlEwdVFZOFZCOVlwbjUy
+        dzlpdkVaMCtDbWlmREZ6VDRVUCtwZm9DMnpJWFRDaVVNeUZUNlBJcVo4dHRuODdZUVdOa2llQ2hi
+        RWUrWk1KM29iZEkrb2cyYzI5NFNHQmc5b3pCcE1pSDJvenpZeEJzM0MxWHpTdjBVOWVneThZSGQx
+        RnJYeG9XdzV0Rm5abHcwQjkzM0RYMjc0bUpYbGZqeHdycGxWcTR4MzhXeHR2d2RoZU45M1JtbStX
+        WGV1RUpkeC9JNXkyRVFhVHlDOTVDU2Vqc0JrdHlBcjNBZHVrRS9YMFR3L0VqVEVBNTZmNnNFUFJD
+        Q3FHZy9sdElFeFNvMmovOGVnUUtOVnVGcDc5L3JWVjBaTVNENDVBMjNEYUFuc1VxR1dHNDJBT0xZ
+        bHV3WVhhRTNhblNhbTFRK3puWlNwMEtSWnd5VmNxeEtlSHJGeGZaTHUyb3huUk1mTWdxTHRRbjgr
+        Yy9pU01JbUp6S2dHT3FZQnE4Y3NHWEtUZ0QvUU80WnduWWlZeUZwUDlxMFBXNE0zS3lncU1JUEMw
+        WDdkOWtBaGpvK2VYN1NsR3l4bGlpc0lLaHp4aWs1RWxFQ3ZBMmhPSEd3WEtKMUIvVVRQeGM2akdl
+        TjR1VUpIS29ZQVBpQ2tSVHFpeWNrampvSDRLS3QyWlhEVjMvUTlSMTFKaTlDSHhkbGk0TllLTDE4
+        U0JFaWt4VjJHTTNGQ1E1SDZFTnZLWjc5ZUQzVXVIaXdoaVhlM3FjS1VlbXJDendPcG53ajZGMUdL
+        MlNMUWo3azg5dz09
+      amz-sdk-invocation-id:
+      - !!binary |
+        YTExOTU5OTYtMmE1My00OTBmLWI0MzEtYjY2MWRiNjNiNTMy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 16:19:23 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6513048b-4260dd1600faa2373a7ced16;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 651c94ab-f1ea-4da4-9138-b8be585fc2c5
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        YWM3ZTdlMTgtOGQ4Ni00MWMwLTgyMjktOTVjMTVlNDViNWI3
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVRMZlVLeXhHZ2NraXlwQS1CTzdReXlqWVFJVllFemJRZi1PX3dDWWtEeGotcGJh
+        eVJiWFFyeWQzNVFJQ2RyVnVSM19UaWk1eDJGR28wY0FBZWQwOk1HVUNNUUNXbFNPUlFFV2RISUp0
+        UklTZ3VBKzNJTis0c09ZUHpmUStCYzFwN3RJdEwzR2dVVFBEYkdyQ0Y5RUZoWG16WWpjQ01IbEtQ
+        ZHNLUzM0MHNtbkhHVjZ2NEphbFUzY1E4SnJ3cnc3aVhUandvSDB0T0VKSXBNR2x0WGREMEN1cE5m
+        MTMzUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCT7MG6G6EX","secretAccessKey":"qoKAj9OuPeelkN9WqUBQDrS2F2Mx2Fg25D5MqshP","sessionToken":"IQoJb3JpZ2luX2VjEIH//////////wEaCWV1LXdlc3QtMSJGMEQCIEecIcU3An+M3jK6GWn3qI0PxfdO3q2VXbPr4SS67x8+AiA1pDf6Kv5HMh1vm+X+oBLR6um0d6LHspwRM3hkp8dGzCqWAwh5EAAaDDIwNzYyNjg4MTE5MSIM2LijtD2SqHZVIvXpKvMCxImwrxYPehO5MgTu/BjBxK0UKUFWzrn4ZIA7QzlcCHb74b83sVu1uMDUx9i/GQ7+T2xR5wMQzqmsbqT9lPDlZm+o1qtPa3H8pq3FW5LZk8xZ7tGLP3LDjDZCkT3lBUgoC9/cjXUQDSUMuwLj0v4f8t1kUYzbZsoNrMf0yS4SK8Bf3jO8Ova4nly9wAtcea7RrJHO6MpZ66OdsouZKGJ1qGJk6Rlzr58V7ofX2WXI+WszSg8VnxGKANsZstgB6DFfHWjAvut71sOeRos1I5MpgtxHAzHB9hFMgI1QAv8eYZM5feZ5Yas6deBhaK8k8KwxYv7D0Y9g852grhyt6V3szZ0NNdlalXE14oQkfDsLOLs/3de8QAKWXQUYhJRrBVMo2iI2tyk+9vZLhmxjvAIhuv7iktuHW/2/Kgy8LpWnBlFIB7gAUTt8U0Gs4OmF5JPl9WJrajUsD/Zo0wNhH8M7gopU3YsQ7oSPqLpDJ8BB4rerQ90wkIrMqAY6pwFvxJLm/hlPPscVqIkUjcTfLTRR/JpEyUPtkHbEL+PFPq+iZDQJ78SQGGwcSNeQGrUMZldrDSJQVsO6PnsyoFTjSfQ/71He6uNWAwtFc5fHapizjw9dRvdZql57L4GTYYX0l1VWdcIc9rX1r0yz0x+4B5JI7MkJhZPbfrdzjddtcHyLSXzkBj4+uTFx+8vdIoOShGHwoFlQSStujah2KofzX4n1fxJRgA==","expiration":1695788495000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1088'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 26 Sep 2023 16:21:36 GMT
+      RequestId:
+      - 6fbe4c24-57db-4a37-ab08-f55f6525991d
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - 6fbe4c24-57db-4a37-ab08-f55f6525991d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTYyMTM2Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVJSC8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pHTUVRQ0lFZWNJ
+        Y1UzQW4rTTNqSzZHV24zcUkwUHhmZE8zcTJWWGJQcjRTUzY3eDgrQWlBMXBEZjZLdjVITWgxdm0r
+        WCtvQkxSNnVtMGQ2TEhzcHdSTTNoa3A4ZEd6Q3FXQXdoNUVBQWFEREl3TnpZeU5qZzRNVEU1TVNJ
+        TTJMaWp0RDJTcUhaVkl2WHBLdk1DeEltd3J4WVBlaE81TWdUdS9CakJ4SzBVS1VGV3pybjRaSUE3
+        UXpsY0NIYjc0Yjgzc1Z1MXVNRFV4OWkvR1E3K1QyeFI1d01RenFtc2JxVDlsUERsWm0rbzFxdFBh
+        M0g4cHEzRlc1TFprOHhaN3RHTFAzTERqRFpDa1QzbEJVZ29DOS9jalhVUURTVU11d0xqMHY0Zjh0
+        MWtVWXpiWnNvTnJNZjB5UzRTSzhCZjNqTzhPdmE0bmx5OXdBdGNlYTdSckpITzZNcFo2Nk9kc291
+        WktHSjFxR0prNlJsenI1OFY3b2ZYMldYSStXc3pTZzhWbnhHS0FOc1pzdGdCNkRGZkhXakF2dXQ3
+        MXNPZVJvczFJNU1wZ3R4SEF6SEI5aEZNZ0kxUUF2OGVZWk01ZmVaNVlhczZkZUJoYUs4azhLd3hZ
+        djdEMFk5Zzg1MmdyaHl0NlYzc3paME5OZGxhbFhFMTRvUWtmRHNMT0xzLzNkZThRQUtXWFFVWWhK
+        UnJCVk1vMmlJMnR5ays5dlpMaG14anZBSWh1djdpa3R1SFcvMi9LZ3k4THBXbkJsRklCN2dBVVR0
+        OFUwR3M0T21GNUpQbDlXSnJhalVzRC9abzB3TmhIOE03Z29wVTNZc1E3b1NQcUxwREo4QkI0cmVy
+        UTkwd2tJck1xQVk2cHdGdnhKTG0vaGxQUHNjVnFJa1VqY1RmTFRSUi9KcEV5VVB0a0hiRUwrUEZQ
+        cStpWkRRSjc4U1FHR3djU05lUUdyVU1abGRyRFNKUVZzTzZQbnN5b0ZUalNmUS83MUhlNnVOV0F3
+        dEZjNWZIYXBpemp3OWRSdmRacWw1N0w0R1RZWVgwbDFWV2RjSWM5clgxcjB5ejB4KzRCNUpJN01r
+        SmhaUGJmcmR6amRkdGNIeUxTWHprQmo0K3VURngrOHZkSW9PU2hHSHdvRmxRU1N0dWphaDJLb2Z6
+        WDRuMWZ4SlJnQT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzFmODU2N2UtY2VjNC00OGYxLWFiYWQtNjMxZmIxZTdlNTgy
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 16:21:36 GMT
+      X-Amzn-Trace-Id:
+      - root=1-65130510-051792b21161924b0f2ddac1;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 31e7b283-783b-4d06-b87c-ebdca782918f
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        NTgyMzU3NjEtMmY2Ni00NmQ4LTgzZmItMDk4ODYzNWYxZmUz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVRMZlVLeXhHZ2NraXlwQS1CTzdReXlqWVFJVllFemJRZi1PX3dDWWtEeGotcGJh
+        eVJiWFFyeWQzNVFJQ2RyVnVSM19UaWk1eDJGR28wY0FBZWQwOk1HVUNNUUNXbFNPUlFFV2RISUp0
+        UklTZ3VBKzNJTis0c09ZUHpmUStCYzFwN3RJdEwzR2dVVFBEYkdyQ0Y5RUZoWG16WWpjQ01IbEtQ
+        ZHNLUzM0MHNtbkhHVjZ2NEphbFUzY1E4SnJ3cnc3aVhUandvSDB0T0VKSXBNR2x0WGREMEN1cE5m
+        MTMzUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCT36JMUOQD","secretAccessKey":"c30+23zX56N0uPCp8692cqXNhe05tjt2xB3nQhbN","sessionToken":"IQoJb3JpZ2luX2VjEIH//////////wEaCWV1LXdlc3QtMSJHMEUCIEURPVR3vY0XwO3BzkgnCHxxOF0Ead6gDa+sXBhmYxdbAiEA9q1RrSNNXGa8nBv24o/4e+o7evswBfSINNL3Oj8y/yMqlgMIehAAGgwyMDc2MjY4ODExOTEiDFcOPR+RXElQzQbFjCrzAi4Arsodl4lcVHAie4XX7GIVMZKTukXDHdWijuLaPzPw9lYTp8lCQw0YqKB7JWQhUixPYKTIqnrqYllZUH974LefulPCjeQWGeEkL+rEKoy02MPwOAYYTppK0J6v3+ZtcXqJcWx6NmCMto61T/SZzKUPzfQr/RCq55AJRdjBooX4tuEHMKgr/wVyS1SFZbcbwjSMqCEzHBkFs1x+rG9l0iroOtcVOX9Re9VThKVefbDN02cTEKHOsb7qtu6P38yq6OZxY1zLbqz+1Gc0WWlFZxEN4kbfZLwnK+2mXUpfBVtAXnkiLpmJSQ56HlC/dH3eaoNvpNuYAFeeS4hE9AoAK5AZNksuiX4wAdk5qYtNx08CaWs2Q0rFI+6pJrKv+YRR6d5ew947vrQn4SX6LAoPG/YZ4WmyKvpGFzKqefbtV03UKE4wLFmZUwIxszt/zhZ+hKYVTMq5B9IPmpJRtf9OdjHOqeyX2Hha964EZQVpY4s7hQ8OMMqKzKgGOqYB5EddHjN19+0vj/jlgn/104WhycVOVFgYIltmH/e9FOnCn1hMg4OW/boDhKbBXzv9jR0H/gChRYKkaz9c/l4u7RsZenjEG3sqsYISZgpILKWBolHs1SLtrrCdhzWdpATMSKam4+bXzRGjgE46Ob+TY/x75y+yVLQaB0VyfviWPgfYAALZBnLJAxWveEUsihb6Gm1wVgGB++eJ7+oFxW/W+HGShW1U7A==","expiration":1695788553000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1088'
+      Content-Type:
+      - application/json
+      Date:
+      - Tue, 26 Sep 2023 16:22:34 GMT
+      RequestId:
+      - da2820ed-9025-4a27-8aaf-bebcc74d46d2
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - da2820ed-9025-4a27-8aaf-bebcc74d46d2
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjZUMTYyMjM0Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVJSC8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pITUVVQ0lFVVJQ
+        VlIzdlkwWHdPM0J6a2duQ0h4eE9GMEVhZDZnRGErc1hCaG1ZeGRiQWlFQTlxMVJyU05OWEdhOG5C
+        djI0by80ZStvN2V2c3dCZlNJTk5MM09qOHkveU1xbGdNSWVoQUFHZ3d5TURjMk1qWTRPREV4T1RF
+        aURGY09QUitSWEVsUXpRYkZqQ3J6QWk0QXJzb2RsNGxjVkhBaWU0WFg3R0lWTVpLVHVrWERIZFdp
+        anVMYVB6UHc5bFlUcDhsQ1F3MFlxS0I3SldRaFVpeFBZS1RJcW5ycVlsbFpVSDk3NExlZnVsUENq
+        ZVFXR2VFa0wrckVLb3kwMk1Qd09BWVlUcHBLMEo2djMrWnRjWHFKY1d4Nk5tQ010bzYxVC9TWnpL
+        VVB6ZlFyL1JDcTU1QUpSZGpCb29YNHR1RUhNS2dyL3dWeVMxU0ZaYmNid2pTTXFDRXpIQmtGczF4
+        K3JHOWwwaXJvT3RjVk9YOVJlOVZUaEtWZWZiRE4wMmNURUtIT3NiN3F0dTZQMzh5cTZPWnhZMXpM
+        YnF6KzFHYzBXV2xGWnhFTjRrYmZaTHduSysybVhVcGZCVnRBWG5raUxwbUpTUTU2SGxDL2RIM2Vh
+        b052cE51WUFGZWVTNGhFOUFvQUs1QVpOa3N1aVg0d0FkazVxWXROeDA4Q2FXczJRMHJGSSs2cEpy
+        S3YrWVJSNmQ1ZXc5NDd2clFuNFNYNkxBb1BHL1laNFdteUt2cEdGektxZWZidFYwM1VLRTR3TEZt
+        WlV3SXhzenQvemhaK2hLWVZUTXE1QjlJUG1wSlJ0ZjlPZGpIT3FleVgySGhhOTY0RVpRVnBZNHM3
+        aFE4T01NcUt6S2dHT3FZQjVFZGRIak4xOSswdmovamxnbi8xMDRXaHljVk9WRmdZSWx0bUgvZTlG
+        T25DbjFoTWc0T1cvYm9EaEtiQlh6djlqUjBIL2dDaFJZS2thejljL2w0dTdSc1plbmpFRzNzcXNZ
+        SVNaZ3BJTEtXQm9sSHMxU0x0cnJDZGh6V2RwQVRNU0thbTQrYlh6UkdqZ0U0Nk9iK1RZL3g3NXkr
+        eVZMUWFCMFZ5ZnZpV1BnZllBQUxaQm5MSkF4V3ZlRVVzaWhiNkdtMXdWZ0dCKytlSjcrb0Z4Vy9X
+        K0hHU2hXMVU3QT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        MGZmYzA4ODQtNWQwYy00Y2NkLWI4ZTktZDZkN2E3NTNiNDQ0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Tue, 26 Sep 2023 16:22:35 GMT
+      X-Amzn-Trace-Id:
+      - root=1-6513054b-451874ec2226f6ab2e59aa96;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 11d6638d-425e-4797-a259-fdb204b3aeab
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTQwMzAwWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKYi8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pHTUVRQ0lEOHZU
+        dUl0SUd4ZS9UUVc5endWM1dqNm83SzZRdTJzRlZRWXVhd1lHZ1RWQWlBUlpSVHJnT2RaYzFNdm5s
+        RnI5V2RheTA1VGVkUTJCSGFmeStIeXZZR0dqU3FmQXdpUC8vLy8vLy8vLy84QkVBQWFEREl3TnpZ
+        eU5qZzRNVEU1TVNJTVNVcDZIWFlsak9PajJBVEdLdk1DRHNMR3RpcFFTODRFbk1nSmRWZ0Z4dVdo
+        c1YzeitPZWE2T0xYMjJHSnNqOCsxUm9FZzRUYVhCbzF6Q3NUb0tSdThuRXBONGE5Z25SWXVKd2Rt
+        R1Jqcm9pTm9xSUtwcnlVZERpWEJjY2VscEgvSUp3cGRVWnJJNmk3YUJ0MmJqeFVXVlkyeG9mMUs1
+        bWdBQUx2cEVPMFU2Nk9XMCtMUElXUlJZZGQyQ08xWEw0aStGbWtHbHlFR3o5OTd2TVhaekx2SnZ1
+        RTNBVnVEQXVaSm5Rc0I1WE0zS1pkbjFtZEhXckxHSUpNV0xtWkFsL0NhWm9IcFBmVk1aZU43VVgv
+        clFISk1TYm1SSHhRbU5wSlZYdllwcGtTK1l1WVNON3ZBY3BXMVpydVNiNUdlQzd1dzdDd2cwUW14
+        R1FPUnF5TU1nOGNSc0NzTitxbGhtRk5VNTd4UlF1VDFqS1AwTGNXczdWbDZIb0lxVitqc1ZPR211
+        a3oyandQc1RrTVZZbDc0WjNRZVcvajBiZnlXN0dUZFJrdjF4ckJJZlV5WTVha015RlJEM0JkbkNx
+        bXNqVnNXOXZVbFROWDZqRVhaMnZDdDV2THFjR2gzcjBFb0ZmNTFZNmI1eXNEcUUyRVVMK2toUzUz
+        Tk9zcGxodnhBQ0RNd0Zvd2tPelFxQVk2cHdIR3lZMHhrOXFYeUlacDVaM3ZNQmZRdzlyOUhCZkZE
+        dGZMUURIQ2hxZHJCUUVHYk41bDNaK3ArSS9RTEJDTUtsd0ZRZ28rZkVCTndTcTNNL3ViM0NWS0NP
+        YmNJeCtBSWc3WVZMK24yczRHZi9tQ1dja3p5QVRnb29QTXRwdFRROWdoZ2p1Yitsc0RDQWE1MGJ0
+        STlUNTNocXlQczltbU10cVh4a1o1Y1UxSXhOM0M5c2NlYVVLRVI5UDNCamxJeVQ4RlNRa0dEZnNi
+        aFJkNzJEZFhLTTJaRnFBY3llcG1aUT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        YWZiNzUwYTAtZjdlOS00Mjg5LWE3OGMtMWRiYmIxMmIwOTk0
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 27 Sep 2023 14:03:00 GMT
+      X-Amzn-Trace-Id:
+      - root=1-65143614-013ba2254d859de323a48ae3;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 101bdc5a-b3f3-46ac-881c-d5bc9155958c
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZmM5OTBjMDYtNDI0NS00ZTA3LTk5YmItOWYxYmMwOTNlNWVh
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVVwYjBySjBJczNQNGl3VjY5NzhhdlhCMWZyRXpUOUtQc2d1c0FQeWFPcVZZNDM4
+        R1k0VkpjSUxWMlQ1MTU0OHVWYkFCMF93ZmJqWTBRUThCZWQwOk1HVUNNUUNkOTd1OGYyd05XQWR1
+        aWdhdVRxbm1CMlVKWFA0SjIrVkhVUkZad1VlZ0NLYVAyY3dqSlllYzc1QkhSODU3eHFRQ01HZitS
+        aE9DSUtMRlN2d2FQd05kalhiSHFFcldqaENSRXBJTDNhdWUzRWtqQkdIR0RZUHVWelFMbVY1aW9a
+        UEhrUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCTVKPGGSOB","secretAccessKey":"/qAP8W0gFffJOO1FPDvXSqSxBrndmU1j+fnd776f","sessionToken":"IQoJb3JpZ2luX2VjEJb//////////wEaCWV1LXdlc3QtMSJIMEYCIQD8NDdIv3JMIxT0kISRwb/KKyeH5acCvo+rEnEimLJUggIhAImdnNIIEfheMIqPhjP0X3WddDssG3YCmHaewcnoPNvmKp8DCI///////////wEQABoMMjA3NjI2ODgxMTkxIgxynAduU/0N/06R7lAq8wINgSpcy0fz7jjwsgwRx37tXY4NkHNWO8w8wdAV3sTm7I/uqiFJawzTdHn1pu/tlUGOYX7vm0rmwIZewaJA1xCg0nF1h02/EN6XJ/9nfsHAAXJIecj90bb1hU2kXFZlms41+A5N3mUyMW1J4e1qs3yaN5Bml04Me8S6EOMINANqR8c0OR6PWfcTn6NCPm15YHHSepT//3L7x1OcdV9CKQAF/gaCQD2FvX4ZduqP4J3mm7hPvQ4mUgWPAu9u2xvot9wfyZJtHG9g1Jq6hnkiuIrpFmcW9GLSpBFMIJ/rWw2O7+RIdS5ChbngkUPlT/tjyOdq9jdhLBqyjFxNzfNarGOiDzg1NETCnQ4qKypcyWRDf1HBL0jrv3Er/5mtKsIg2zSun+3z2ICh7IRsWMGyl0Jtsuqwsj1n8g90XEeX8cpRb6Gn42CCc0brK7det3Jfd3xZ1recPUf/jMlovEUtO/KfEWsUNfUcgQTP0FVvCzwbxNiXrjCn7tCoBjqlAX50cSdQ+Tq7tgqGC61OQHF8WcVeEzy+GQruXdhfccnCWrZMbSfGUnt4/zkTP+ajGZXE/+/ubPMctT5mUOw7gLgIv51pq0NaMRQvZi5S2c5fNqRJRqe+WjvdGJhlxSfqUdLv+Q+iCWj869ZonAHxt8EGz71T1mh14WP0SxULGD860UH3iu3ffXsrmrfCdBq+OuTb6ligs014YU9nmonWQdyiH2YOXw==","expiration":1695866854000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1100'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 27 Sep 2023 14:07:35 GMT
+      RequestId:
+      - 983ca5a2-36af-406a-8d17-7722f2f5480d
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - 983ca5a2-36af-406a-8d17-7722f2f5480d
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTQwNTAwWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKYi8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRRDhO
+        RGRJdjNKTUl4VDBrSVNSd2IvS0t5ZUg1YWNDdm8rckVuRWltTEpVZ2dJaEFJbWRuTklJRWZoZU1J
+        cVBoalAwWDNXZGREc3NHM1lDbUhhZXdjbm9QTnZtS3A4RENJLy8vLy8vLy8vLy93RVFBQm9NTWpB
+        M05qSTJPRGd4TVRreElneHluQWR1VS8wTi8wNlI3bEFxOHdJTmdTcGN5MGZ6N2pqd3Nnd1J4Mzd0
+        WFk0TmtITldPOHc4d2RBVjNzVG03SS91cWlGSmF3elRkSG4xcHUvdGxVR09ZWDd2bTBybXdJWmV3
+        YUpBMXhDZzBuRjFoMDIvRU42WEovOW5mc0hBQVhKSWVjajkwYmIxaFUya1hGWmxtczQxK0E1TjNt
+        VXlNVzFKNGUxcXMzeWFONUJtbDA0TWU4UzZFT01JTkFOcVI4YzBPUjZQV2ZjVG42TkNQbTE1WUhI
+        U2VwVC8vM0w3eDFPY2RWOUNLUUFGL2dhQ1FEMkZ2WDRaZHVxUDRKM21tN2hQdlE0bVVnV1BBdTl1
+        Mnh2b3Q5d2Z5Wkp0SEc5ZzFKcTZobmtpdUlycEZtY1c5R0xTcEJGTUlKL3JXdzJPNytSSWRTNUNo
+        Ym5na1VQbFQvdGp5T2RxOWpkaExCcXlqRnhOemZOYXJHT2lEemcxTkVUQ25RNHFLeXBjeVdSRGYx
+        SEJMMGpydjNFci81bXRLc0lnMnpTdW4rM3oySUNoN0lSc1dNR3lsMEp0c3Vxd3NqMW44ZzkwWEVl
+        WDhjcFJiNkduNDJDQ2MwYnJLN2RldDNKZmQzeFoxcmVjUFVmL2pNbG92RVV0Ty9LZkVXc1VOZlVj
+        Z1FUUDBGVnZDendieE5pWHJqQ243dENvQmpxbEFYNTBjU2RRK1RxN3RncUdDNjFPUUhGOFdjVmVF
+        enkrR1FydVhkaGZjY25DV3JaTWJTZkdVbnQ0L3prVFArYWpHWlhFLysvdWJQTWN0VDVtVU93N2dM
+        Z0l2NTFwcTBOYU1SUXZaaTVTMmM1Zk5xUkpScWUrV2p2ZEdKaGx4U2ZxVWRMditRK2lDV2o4Njla
+        b25BSHh0OEVHejcxVDFtaDE0V1AwU3hVTEdEODYwVUgzaXUzZmZYc3JtcmZDZEJxK091VGI2bGln
+        czAxNFlVOW5tb25XUWR5aUgyWU9Ydz09
+      amz-sdk-invocation-id:
+      - !!binary |
+        ZDdmN2Y4ZmUtZDdkZi00Y2NiLTk5MDEtMmEzMjA3ZDUyMTVk
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 27 Sep 2023 14:07:36 GMT
+      X-Amzn-Trace-Id:
+      - root=1-65143728-78f5d9625c7620c669c38200;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 179b46b2-c33a-4a16-93a5-146e42a9d421
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      amz-sdk-invocation-id:
+      - !!binary |
+        YjY3Y2MzOTctMzhhMC00YzA5LTgwMDgtYWFhNjI2Yzc5NzIw
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+      x-amz-sso_bearer_token:
+      - !!binary |
+        YW9hQUFBQUFHVVVwYjBySjBJczNQNGl3VjY5NzhhdlhCMWZyRXpUOUtQc2d1c0FQeWFPcVZZNDM4
+        R1k0VkpjSUxWMlQ1MTU0OHVWYkFCMF93ZmJqWTBRUThCZWQwOk1HVUNNUUNkOTd1OGYyd05XQWR1
+        aWdhdVRxbm1CMlVKWFA0SjIrVkhVUkZad1VlZ0NLYVAyY3dqSlllYzc1QkhSODU3eHFRQ01HZitS
+        aE9DSUtMRlN2d2FQd05kalhiSHFFcldqaENSRXBJTDNhdWUzRWtqQkdIR0RZUHVWelFMbVY1aW9a
+        UEhrUQ==
+    method: GET
+    uri: https://portal.sso.eu-west-1.amazonaws.com/federation/credentials?role_name=AdministratorAccess&account_id=207626881191
+  response:
+    body:
+      string: '{"roleCredentials":{"accessKeyId":"ASIATAV4GZCT6EU5NCFH","secretAccessKey":"H0rLN7TfG20SRdrhJ+EMmy3TmoopLOIg06QlyMCV","sessionToken":"IQoJb3JpZ2luX2VjEJj//////////wEaCWV1LXdlc3QtMSJHMEUCIByFgOJ4MSYk+i/CzAdhk65Ve/bBz5+e87CuHLkFNzdjAiEAm1ndM07J9Gy+Hjif2/mE7MrhmH1nzcC0tRos1+Lw8KcqnwMIkf//////////ARAAGgwyMDc2MjY4ODExOTEiDMySVGwaC2uX9IFDpirzAo9X2asg3HqEuclqaieQtIS8ayw4oIHNctz5xDXaWxn0dupOOWyVmpb6lFwxAc2jyEV8K5W3uW6MVdDzgPMX0zAdm7i+sWoCXpN9GbBl7JF0+Nhl/tOlE97JL4UdOAWw9fYPemUmeDKY9dWctgFQJVYgJPdh9lUoDrcAOlnJUvU5geUdwB5ucleMmO6tA9s6yMTB9rBxNM3wNtq8l/0xyc1ooSBBzSwGqFcAaXhDtmRb+a8H8h1fZSeBJ3xyZ7269dtnfHhGvnNSIhrwLsU6C64lPOVqjqWIpH+ZxhLoKM59YmRk8sJoA9wEzTBBdPRkrNAp/FnMELrV8ozzSv9V0Tl9mdZsHvzR7QfW3RWvzlytcz0M5I20h4mcXXONM4JyeVmzzHhpOANj+qcn7y9UeG8bb05she3PUkqn7mElNL5UjONIW2/n7i3/DXq8tFMS6+cZGUhEaSdU1YaZj/FEyyuBSL2b0H9aLivpjDc3EEGiPO/qMKee0agGOqYBqoGYZS+qyDdIfBWHmdlg/1wMzDERhsM9W3+2A681tnTe5lDLZgUCHzvMIaaA/D1pDNDMaFuPMeRHrXUedoKaXAZyDPpUGvGt5XCrxD4XqU6pnk0n8Ig8IxhyEwvqlAXR4GXIl1Qieml4aOrU8F/w4tNmBAn7Q1g8gjQRf3KTxKk3ygULQL1Ct0dHNffKTtDVLy6MtUhUY8Ysf0acdWNsyI/WFQGNdA==","expiration":1695872998000}}'
+    headers:
+      Access-Control-Expose-Headers:
+      - RequestId
+      - x-amzn-RequestId
+      Cache-Control:
+      - no-cache
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1100'
+      Content-Type:
+      - application/json
+      Date:
+      - Wed, 27 Sep 2023 15:49:59 GMT
+      RequestId:
+      - b918c77c-bf41-4d0c-91d8-a9317aa100b0
+      Server:
+      - AWS SSO
+      x-amzn-RequestId:
+      - b918c77c-bf41-4d0c-91d8-a9317aa100b0
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTU0OTU5Wg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKai8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pITUVVQ0lCeUZn
+        T0o0TVNZaytpL0N6QWRoazY1VmUvYkJ6NStlODdDdUhMa0ZOemRqQWlFQW0xbmRNMDdKOUd5K0hq
+        aWYyL21FN01yaG1IMW56Y0MwdFJvczErTHc4S2NxbndNSWtmLy8vLy8vLy8vL0FSQUFHZ3d5TURj
+        Mk1qWTRPREV4T1RFaURNeVNWR3dhQzJ1WDlJRkRwaXJ6QW85WDJhc2czSHFFdWNscWFpZVF0SVM4
+        YXl3NG9JSE5jdHo1eERYYVd4bjBkdXBPT1d5Vm1wYjZsRnd4QWMyanlFVjhLNVczdVc2TVZkRHpn
+        UE1YMHpBZG03aStzV29DWHBOOUdiQmw3SkYwK05obC90T2xFOTdKTDRVZE9BV3c5ZllQZW1VbWVE
+        S1k5ZFdjdGdGUUpWWWdKUGRoOWxVb0RyY0FPbG5KVXZVNWdlVWR3QjV1Y2xlTW1PNnRBOXM2eU1U
+        QjlyQnhOTTN3TnRxOGwvMHh5YzFvb1NCQnpTd0dxRmNBYVhoRHRtUmIrYThIOGgxZlpTZUJKM3h5
+        WjcyNjlkdG5mSGhHdm5OU0locndMc1U2QzY0bFBPVnFqcVdJcEgrWnhoTG9LTTU5WW1SazhzSm9B
+        OXdFelRCQmRQUmtyTkFwL0ZuTUVMclY4b3p6U3Y5VjBUbDltZFpzSHZ6UjdRZlczUld2emx5dGN6
+        ME01STIwaDRtY1hYT05NNEp5ZVZtenpIaHBPQU5qK3Fjbjd5OVVlRzhiYjA1c2hlM1BVa3FuN21F
+        bE5MNVVqT05JVzIvbjdpMy9EWHE4dEZNUzYrY1pHVWhFYVNkVTFZYVpqL0ZFeXl1QlNMMmIwSDlh
+        TGl2cGpEYzNFRUdpUE8vcU1LZWUwYWdHT3FZQnFvR1laUytxeURkSWZCV0htZGxnLzF3TXpERVJo
+        c005VzMrMkE2ODF0blRlNWxETFpnVUNIenZNSWFhQS9EMXBETkRNYUZ1UE1lUkhyWFVlZG9LYVhB
+        WnlEUHBVR3ZHdDVYQ3J4RDRYcVU2cG5rMG44SWc4SXhoeUV3dnFsQVhSNEdYSWwxUWllbWw0YU9y
+        VThGL3c0dE5tQkFuN1ExZzhnalFSZjNLVHhLazN5Z1VMUUwxQ3QwZEhOZmZLVHREVkx5Nk10VWhV
+        WThZc2YwYWNkV05zeUkvV0ZRR05kQT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        YzUzMGRhY2MtOWY2OC00OWIyLTgyNDQtOWI3NGJmMDY5YTMz
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 27 Sep 2023 15:49:59 GMT
+      X-Amzn-Trace-Id:
+      - root=1-65144f27-5c2f556e5188a9741f535ad1;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - dc1067a0-aa73-4848-bfb8-e2e4cfcb53f8
+    status:
+      code: 202
+      message: Accepted
+- request:
+    body: '{"reporting_template": "https://wrc.fjelltopp.org/dataset/a460606e-625d-4edf-821e-058f29fff20a/resource/6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx",
+      "dataset_id": "family-medicine-demo", "ckan_user": "jberry", "ckan_url": "https://wrc.fjelltopp.org"}'
+    headers:
+      Authorization:
+      - DUMMY
+      Content-Length:
+      - '260'
+      User-Agent:
+      - !!binary |
+        Qm90bzMvMS4yOC41MiBtZC9Cb3RvY29yZSMxLjMxLjUyIHVhLzIuMCBvcy9saW51eCM2LjIuMC0z
+        Mi1nZW5lcmljIG1kL2FyY2gjeDg2XzY0IGxhbmcvcHl0aG9uIzMuOC4xOCBtZC9weWltcGwjQ1B5
+        dGhvbiBjZmcvcmV0cnktbW9kZSNsZWdhY3kgQm90b2NvcmUvMS4zMS41Mg==
+      X-Amz-Client-Context:
+      - !!binary |
+        c3RyaW5n
+      X-Amz-Date:
+      - !!binary |
+        MjAyMzA5MjdUMTYyMDAzWg==
+      X-Amz-Invocation-Type:
+      - !!binary |
+        RXZlbnQ=
+      X-Amz-Log-Type:
+      - !!binary |
+        Tm9uZQ==
+      X-Amz-Security-Token:
+      - !!binary |
+        SVFvSmIzSnBaMmx1WDJWakVKbi8vLy8vLy8vLy93RWFDV1YxTFhkbGMzUXRNU0pJTUVZQ0lRQzNZ
+        K0xmSTFhYUVib0NJSkI1VTBsQksyMXA1bmhHRHVzMko1VE5xMDZ6bndJaEFNNEhzY00wWkFPblVo
+        Szh0dXJ2OEU4V3REZVYxNUtxSUlqYVZxc1o2ZnlPS3A4RENKSC8vLy8vLy8vLy93RVFBQm9NTWpB
+        M05qSTJPRGd4TVRreElnenlLd2VNRElLRmRZNy9lazBxOHdMRnp0UTRMN2hqNkI0RGZBL1NQeWJS
+        eW9YTi9yTUxoMXlDem1qZjU5c3JZYm1KNnR5OThKTFYreG5ndFIxWEFjaVBUMDRJUm5WVmU2NXpS
+        Q2p3ZGxRdjNMb1JRd1FwU3NBV3dtL0x3czRBbnRnaWtSZ1pubmhTaGlqK0ZWSHAxK3l6MGRGU29z
+        ckhISFh3NVNEWEpLQU0xcURtNTUzbldacG85dHhwUlVqQkFvVmtuRTR3dHVKbWppd1NvRVo3SlhQ
+        aktyTUNUVXpmRnF2cnA1Qks3MUdkWXlYaXU4RDhLSEs3ZWtBSUVxamN4ZzN0SElVU2dCZCtxV3o3
+        a0w0RkxIQjV2ZFlTb2p2cFZLallRTDZjWWlXTEgwa0ZRdkx1OFJpdE9ITkh5cXBtbmhiTlB3QmQw
+        ZExvOWxUMzZOWGlSVkgxb0F3cXNEZmd1WHUxZTQxbWN6Rk9icGs4cndnd0NrVmllaDVrWDdWZlhB
+        eEdhSjllYm12OWZoT0RNbWhQSWc2aVFXOXNuZlozZEtpRk1TbHI4V1hhR0N4ZEhlU3J3R0JzdW9H
+        eHgxcTFyb3FiSWdWdGcyZkxkSVh2NE42SmlFOHgrVzd0UmliU2pENjNZakk4VHFwSVVocXNMTmQ5
+        TTRwRHVhTTFDNHdrdWpaUXB6Q3hyTkdvQmpxbEFkL2V2LzVuMUhaWmwvdGhBaDNHRW1kc1lUV0R3
+        RERYVzJ6MVpDSDl1Qkt5cE01QzN0MVdHNHBzWk5mbkkzcm1ycVR0NmowWnZkR0w4b2JReVlpTGVX
+        VGhrNmNsNCtwMDBxNlNFRk5KbWZWcGlIbUxZK2FUT3RSUkhSdU45U0IxTVIxUTExNzBWdWsxdE54
+        VFhPRThaVkphZ3d0c3BBN25rajRwSG1iRXRDN3hWWUZkWGltYSs5RjJzalM1ZDF6cnVnSGRsQUR0
+        bVdKMDdadVNQRFZ2N3V2a0QwVDVKQT09
+      amz-sdk-invocation-id:
+      - !!binary |
+        NTExMmJkZWItMDkzOS00Yjk2LWJkMjEtZTBlZDBlYWI0NWUx
+      amz-sdk-request:
+      - !!binary |
+        YXR0ZW1wdD0x
+    method: POST
+    uri: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/WRCLambda-FamilyMedicine-8lXLORrdBUsY/invocations
+  response:
+    body:
+      string: ''
+    headers:
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '0'
+      Date:
+      - Wed, 27 Sep 2023 16:20:03 GMT
+      X-Amzn-Trace-Id:
+      - root=1-65145633-3393365a4e3cb9e8783bb5a9;sampled=0
+      x-amzn-Remapped-Content-Length:
+      - '0'
+      x-amzn-RequestId:
+      - 2bc59bec-9df4-4ea7-afc2-33fdb387ea19
+    status:
+      code: 202
+      message: Accepted
+version: 1

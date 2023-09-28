@@ -1,5 +1,6 @@
 scheming_version: 2
 dataset_type: family-medicine
+name: Family Medicine
 about: A dataset schema to collect data from WHO supported family medicine clinics. 
 about_url: http://github.com/ckan/ckanext-scheming
 

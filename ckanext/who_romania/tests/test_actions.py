@@ -1,4 +1,7 @@
 import pytest
+import mock
+from freezegun import freeze_time
+import datetime
 import ckan.tests.factories as factories
 from ckan.tests.helpers import call_action
 import ckan.plugins.toolkit as toolkit
@@ -61,3 +64,47 @@ class TestUserShowMe(object):
         user_obj = model.User.get(user['name'])
         response = call_action('user_show_me', {'auth_user_obj': user_obj})
         assert response['name'] == user['name']
+
+
+@pytest.mark.ckan_config('ckan.plugins', 'who_romania')
+@pytest.mark.usefixtures('clean_db', 'with_plugins')
+@pytest.mark.vcr
+@pytest.mark.skip(reason="Budget has not granted time to get these tests work stably")
+@freeze_time(datetime.datetime(2023, 9, 26, 14, 20, 0))
+class TestLambda(object):
+
+    def test_lambda_logs_success(self):
+        response = call_action(
+            'lambda_logs', {},
+            lambda_function='WRCLambda-FamilyMedicine-8lXLORrdBUsY'
+        )
+        assert 'events' in response
+
+    def test_lambda_logs_fail(self):
+        with pytest.raises(toolkit.ObjectNotFound):
+            call_action(
+                'lambda_logs', {},
+                lambda_function='Bad-Name'
+            )
+
+    def test_lambda_invoke_success(self):
+        response = call_action(
+            'lambda_invoke', {'user': 'jberry'},
+            lambda_function='WRCLambda-FamilyMedicine-8lXLORrdBUsY',
+            reporting_template=("https://wrc.fjelltopp.org/dataset/"
+                                "a460606e-625d-4edf-821e-058f29fff20a/resource/"
+                                "6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx"),
+            dataset_id="family-medicine-demo"
+        )
+        assert response['StatusCode'] == 202
+
+    def test_lambda_invoke_fail(self):
+        with pytest.raises(toolkit.ObjectNotFound):
+            call_action(
+                'lambda_invoke', {'user': 'jberry'},
+                lambda_function='BadName',
+                reporting_template=("https://wrc.fjelltopp.org/dataset/"
+                                    "a460606e-625d-4edf-821e-058f29fff20a/resource/"
+                                    "6e451aa0-9105-458f-a065-663f7e4fbed0/download/6.xlsx"),
+                dataset_id="family-medicine-demo"
+            )

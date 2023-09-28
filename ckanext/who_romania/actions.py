@@ -1,6 +1,8 @@
 import logging
 import random
 import re
+import boto3
+import json
 
 import ckan.plugins.toolkit as toolkit
 from ckan.plugins.toolkit import ValidationError, _
@@ -114,6 +116,52 @@ def check_id_is_unique(context, data_dict):
 
         if user is not None:
             raise ValidationError(_('That user ID is not available.'))
+
+
+def lambda_invoke(context, data_dict):
+    toolkit.check_access('lambda_invoke', context, data_dict)
+    lambda_function = toolkit.get_or_bust(data_dict, 'lambda_function')
+    del data_dict['lambda_function']
+    data_dict['ckan_user'] = context['user']
+    data_dict['ckan_url'] = toolkit.config.get('ckanext.who_romania.lambda_ckan_url')
+    try:
+        client = boto3.client('lambda')
+        return client.invoke(
+            FunctionName=lambda_function,
+            InvocationType='Event',
+            LogType='None',
+            ClientContext='string',
+            Payload=json.dumps(data_dict)
+        )
+    except Exception as e:
+        raise toolkit.ObjectNotFound(
+            f"{e} Lambda function could not be found and invoked, are "
+            f"you sure access permissions are correct? {data_dict}"
+        )
+
+
+def lambda_logs(context, data_dict):
+    lambda_function = toolkit.get_or_bust(data_dict, 'lambda_function')
+    log_group = f'/aws/lambda/{lambda_function}'
+    try:
+        client = boto3.client('logs')
+        if not data_dict.get('log_stream_name'):
+            log_stream_name = client.describe_log_streams(
+                logGroupName=log_group,
+                orderBy='LastEventTime',
+                limit=1,
+                descending=True
+            )['logStreams'][0]['logStreamName']
+        else:
+            log_stream_name = data_dict['log_stream_name']
+        return client.get_log_events(
+            logGroupName=log_group,
+            logStreamName=log_stream_name,
+            startTime=1
+        )
+    except Exception as e:
+        raise toolkit.ObjectNotFound(f"{e} Lambda logs could not be found, are you sure "
+                                     f"AWS access permissions are correct? {data_dict}")
 
 
 def dataset_tag_replace(context, data_dict):

@@ -1,0 +1,38 @@
+{% extends "page.html" %}
+
+{% block breadcrumb_content %}
+    <li>{{_('Automation Logs')}}</li>
+    <li class="active"><a href="">{{lambda_function}}</a></li>
+{% endblock %}
+
+{% block primary_content %}
+  <section class="module">
+    <div class="module-content">
+      <h1 class="heading">Automation Logs</h1>
+      <div class="logs">
+        {% for event in logs %}
+            {% set log = " ".join(event.message.split("\t")[3:]).strip() %}
+            {% set type = event.message.split('\t')[0].lower()[1:-1] %}
+            {% if log %}
+                <p class="log {{type}}">{{log|urlize}}</p>
+            {% endif %}
+        {% endfor %}
+      </div>
+      <p class="logs-reload">{{_('<a href=""><i class="fa fa-sync"></i>Reload the page</a> to see latest logs...')}}
+    </div>
+  </section>
+{% endblock %}
+
+{% block secondary_content %}
+    <section class="module module-narrow">
+      <div class="module context-info">
+        <div class="module-content">
+          <h1 class="heading">Automation Logs</h1>
+          <p class="small automation-function">
+            <strong>{{_('For the latest invokation of:')}}</strong>
+            <br/>{{lambda_function}}
+          </p>
+        </div>
+      </div>
+    </section>
+{% endblock %}
