@@ -119,6 +119,7 @@ def check_id_is_unique(context, data_dict):
 
 
 def lambda_invoke(context, data_dict):
+    toolkit.check_access('lambda_invoke', context, data_dict)
     lambda_function = toolkit.get_or_bust(data_dict, 'lambda_function')
     del data_dict['lambda_function']
     data_dict['ckan_user'] = context['user']

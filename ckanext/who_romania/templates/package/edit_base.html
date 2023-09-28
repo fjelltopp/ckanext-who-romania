@@ -1,17 +1,17 @@
 {% ckan_extends %}
 
 {% block secondary_content %}
-{{super()}}
-{% if pkg['type'] in ['family-medicine'] %}
-<section class="module module-narrow automation">
-  <div class="module context-info">
-    <div class="module-content">
-        <p>{{_('Automation is available to create a monthly aggregated dataset from this data...')}}</p>
-        <form action="{{h.url_for('lambda.family_medicine', dataset_id=pkg['id'])}}" method="post">
-            <input type="submit" class="btn btn-primary" value="{{_('Aggregate Now')}}" />
-        </form>
-    </div>
-  </div>
-</section>
-{% endif %}
+  {{super()}}
+  {% if pkg['type'] in ['family-medicine'] and h.check_access('lambda_invoke')%}
+    <section class="module module-narrow automation">
+      <div class="module context-info">
+        <div class="module-content">
+            <p>{{_('Automation is available to create a monthly aggregated dataset from this data...')}}</p>
+            <form action="{{h.url_for('lambda.family_medicine', dataset_id=pkg['id'])}}" method="post">
+              <input type="submit" class="btn btn-primary" value="{{_('Aggregate Now')}}" />
+            </form>
+        </div>
+      </div>
+    </section>
+  {% endif %}
 {% endblock %}

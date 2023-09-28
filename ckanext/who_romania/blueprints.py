@@ -13,6 +13,10 @@ lambda_blueprint = Blueprint(
 
 def view_logs(lambda_function):
     try:
+        toolkit.check_access('lambda_invoke', {})
+    except toolkit.NotAuthorized:
+        toolkit.abort(403, toolkit._('Not authorized to perform this action'))
+    try:
         logs = toolkit.get_action('lambda_logs')({}, {
             'lambda_function': lambda_function
         })['events']
@@ -36,7 +40,12 @@ def view_logs(lambda_function):
 
 
 def family_medicine(dataset_id):
-    toolkit.check_access('package_update', {}, {'id': dataset_id})
+    try:
+        toolkit.check_access('package_update', {}, {'id': dataset_id})
+        toolkit.check_access('lambda_invoke', {})
+    except toolkit.NotAuthorized:
+        toolkit.abort(403, toolkit._('Not authorized to perform this action'))
+
     lambda_function = toolkit.config.get(
         'ckanext.who_romania.lambda_family_medicine_function',
         ''

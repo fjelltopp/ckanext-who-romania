@@ -12,6 +12,7 @@ import ckanext.who_romania.upload as who_romania_upload
 import ckanext.who_romania.validators as who_romania_validators
 import ckanext.who_romania.helpers as who_romania_helpers
 import ckanext.who_romania.blueprints as who_romania_blueprints
+import ckanext.who_romania.auth as who_romania_auth
 from ckan.lib.plugins import DefaultPermissionLabels
 
 from ckan.common import config_declaration
@@ -27,6 +28,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     plugins.implements(plugins.ITemplateHelpers)
     plugins.implements(plugins.IResourceController, inherit=True)
     plugins.implements(plugins.IActions)
+    plugins.implements(plugins.IAuthFunctions)
     plugins.implements(plugins.IValidators)
     plugins.implements(plugins.IBlueprint)
     plugins.implements(plugins.IConfigDeclaration)
@@ -81,7 +83,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             ""
         ).set_description("The family medicine data reporting template")
         declaration.declare(
-            group.lambda_family_medicine_users,
+            group.lambda_invoke_users,
             ""
         ).set_description("Users (other than sysadmins) with permission to invoke")
 
@@ -119,6 +121,10 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             'lambda_invoke': who_romania_actions.lambda_invoke,
             'lambda_logs': who_romania_actions.lambda_logs
         }
+
+    # IAuthFunctions
+    def get_auth_functions(self):
+        return {"lambda_invoke": who_romania_auth.lambda_invoke}
 
     # IValidators
     def get_validators(self):
