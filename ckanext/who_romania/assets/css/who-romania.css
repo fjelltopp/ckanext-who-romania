@@ -1,175 +1,175 @@
 /* This file overwrites css from the base ckan theme */
 a {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .text-primary {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .bg-primary {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .btn-primary {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 fieldset[disabled] .btn-primary.focus {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .btn-primary .badge {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .btn-link {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .dropdown-menu > .active > a:focus {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .nav .open > a:focus {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .nav-pills > li.active > a:focus {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .pagination > li > span {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .pagination > .active > span:focus {
-  background-color: #008dc9;
-  border-color: #008dc9;
+  background-color: #00205c;
+  border-color: #00205c;
 }
 
 .label-primary {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .nav-pills > .active > a > .badge {
-  color: #008dc9;
+  color: #00205c;
 }
 
 a.thumbnail.active {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .progress-bar {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  background-color: #008dc9;
-  border-color: #008dc9;
+  background-color: #00205c;
+  border-color: #00205c;
 }
 
 .panel-primary {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .panel-primary > .panel-heading {
-  background-color: #008dc9;
-  border-color: #008dc9;
+  background-color: #00205c;
+  border-color: #00205c;
 }
 
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #008dc9;
+  border-top-color: #00205c;
 }
 .panel-primary > .panel-heading .badge {
-  color: #008dc9;
+  color: #00205c;
 }
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #008dc9;
+  border-bottom-color: #00205c;
 }
 
 .banner {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .media-view:hover,
 .media-view.hovered {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .media-view:hover .banner,
 .media-view.hovered .banner {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .editor .editor-info-block a {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .resource-list.reordering .resource-item.ui-sortable-helper {
-  border: 1px solid #008dc9;
+  border: 1px solid #00205c;
 }
 .resource-list.reordering .resource-item.ui-sortable-helper .handle {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .view-list li a.active,
 .view-list li a:hover {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 .view-list li a.active .icon,
 .view-list li a:hover .icon {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .view-list li .arrow {
-  border-top-color: #008dc9;
+  border-top-color: #00205c;
 }
 
 .view-list li.active a {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 .view-list li.active a .icon {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .view-list.stacked::-webkit-scrollbar-thumb:hover {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .homepage .module-search .module-content {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .masthead {
-  background: #008dc9 url("../../../base/images/bg.png");
+  background: #00205c url("../../../base/images/bg.png");
 }
 
 .site-footer {
-  background: #008dc9 url("../../../base/images/bg.png");
+  background: #00205c;
 }
 
 .popover-followee .nav li a i {
-  background-color: #008dc9;
+  background-color: #00205c;
 }
 
 .popover-followee .nav li.active a i {
-  color: #008dc9;
+  color: #00205c;
 }
 
 .resource-view-list.reordering li.ui-sortable-helper {
-  border: 1px solid #008dc9;
+  border: 1px solid #00205c;
 }
 
 .resource-view-list.reordering li.ui-sortable-helper .handle {
-  border-color: #008dc9;
+  border-color: #00205c;
 }
 
 body {
-  background: #008dc9 url("../../../base/images/bg.png");
+  background: #00205c url("../../../base/images/bg.png");
 }
 
 @media (max-width: 991px) {
@@ -313,7 +313,7 @@ p.small {
     line-height: 20px;
     font-weight: 700;
     font-size: 14px;
-    color: #008dc9;
+    color: #00205c;
     margin:  10px;
     display:  inline-block;
     vertical-align:  middle;
@@ -329,7 +329,7 @@ p.small {
     font-weight: 700;
     font-size: 14px;
     line-height: 20px;
-    color: #008dc9;
+    color: #00205c;
 }
 
 #NavbarHeadingContainer .subtitle {
@@ -354,7 +354,7 @@ p.small {
 }
 
 .navbar-light .navbar-toggler {
-    background: #008dc9;
+    background: #00205c;
     border: none;
     font-size: 20px;
     padding: 5px 10px;
@@ -369,7 +369,7 @@ p.small {
     font-weight: 700;
     font-size: 14px;
     line-height: 30px;
-    color: #008dc9;
+    color: #00205c;
     flex: none;
     order: 1;
     flex-grow: 0;
@@ -387,7 +387,7 @@ p.small {
 .masthead .main-navbar ul li:focus a,
 .masthead .main-navbar ul li.active a
 {
-    color: #d86422;
+    color: #008dc9;
     background-color: transparent;
 
 }
@@ -403,7 +403,7 @@ p.small {
 }
 
 .site-search .btn-search .fa-search {
-    color: #008dc9;
+    color: #00205c;
     font-size: 20px;
     position:  absolute;
     top: 0px;
@@ -413,12 +413,12 @@ p.small {
 .fluid-white-bar {
     background-color: white;
     height: 80px;
-    border-bottom: solid 5px #008dc9;
+    border-bottom: solid 5px #00205c;
 }
 
 .account-masthead {
   height: 40px;
-  background: #008dc9;
+  background: #00205c;
 }
 
 .account-masthead .account ul li a {
@@ -448,7 +448,7 @@ p.small {
 
 .account-masthead .account .notifications a span.badge {
     background: #fff1e9;
-    color: #d86422;
+    color: #008dc9;
 }
 
 .promoted {
@@ -500,7 +500,7 @@ p.small {
 
 .promoted .big-search-form .fa-search{
     font-size:  20px;
-    color: #008dc9;
+    color: #00205c;
 }
 
 .promoted .big-search-form input{
@@ -559,7 +559,7 @@ p.small {
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
-    color: #008dc9;
+    color: #00205c;
 }
 
 .category-box .group-text .desc{
@@ -573,7 +573,7 @@ p.small {
 
 .category-box .btn-delete {
     background: transparent;
-    color: #008dc9;
+    color: #00205c;
     font-size: 20px;
     padding: 20px;
     position: absolute;
@@ -595,7 +595,7 @@ p.small {
 .dataset-resources li a.badge,
 .dataset-resources li a.badge:hover{
     background-color:  transparent;
-    color: #d86422;
+    color: #008dc9;
     padding:  0px;
 }
 
@@ -641,7 +641,7 @@ a.tag:hover  {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: #008dc9;
+    color: #00205c;
     margin:  10px 0px;
 }
 
@@ -673,9 +673,14 @@ a.tag:hover  {
     margin: 48px 20px 64px 0px;
 }
 
+.subscribe{
+    background: #00205c;
+    padding: 50px 0px 10px 0px;
+}
+
 .subscribe .highlight-box {
     margin: 0px;
-    background: #008dc9;
+    background: #19366c;
     border-radius: 4px;
     padding: 32px;
     margin-bottom:  64px;
@@ -693,7 +698,7 @@ a.tag:hover  {
 
 .subscribe .register {
     height: 48px;
-    color: #008dc9;
+    color: #00205c;
     background: #EDE8E8;
     border-radius: 4px;
     display: inline-block;
@@ -751,8 +756,9 @@ a.tag:hover  {
 }
 
 .site-footer {
-    background-color: #232728;
+    background-color: #00205c;
     width: 100%;
+    margin-bottom: -25px;
 }
 
 .footer-links{
@@ -814,7 +820,7 @@ a.tag:hover  {
 }
 
 .navbar-toggle {
-    color: #008dc9;
+    color: #00205c;
 }
 
 .add-category{
@@ -832,8 +838,8 @@ a.tag:hover  {
 
 .btn-primary,
 .btn-danger {
-  background-color: #008dc9;
-  border-color: #008dc9;
+  background-color: #00205c;
+  border-color: #00205c;
   color: #fff;
 
 }
@@ -855,8 +861,8 @@ a.tag:hover  {
 .btn-primary.active.focus,
 .open > .dropdown-toggle.btn-primary.focus  {
   color: #fff;
-  background-color: #d86422;
-  border-color: #d86422;
+  background-color: #008dc9;
+  border-color: #008dc9;
 }
 
 .btn-xs{
@@ -915,7 +921,7 @@ a.tag:hover  {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    color: #008dc9;
+    color: #00205c;
 }
 
 .add-to-group button{
@@ -931,7 +937,7 @@ a.tag:hover  {
 }
 
 .recently-updated .view-all-btn{
-    background-color: #008dc9;
+    background-color: #00205c;
 }
 
 
@@ -996,7 +1002,7 @@ a.tag:hover  {
 
 .logs-reload i{
     margin-right: 5px;
-    color: #008dc9;
+    color: #00205c;
 }
 
 .module.automation{
