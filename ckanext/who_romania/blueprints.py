@@ -11,24 +11,25 @@ lambda_blueprint = Blueprint(
 )
 
 
-def view_logs(lambda_function):
+def view_logs(lambda_function, logs=None):
     try:
         toolkit.check_access('lambda_invoke', {})
     except toolkit.NotAuthorized:
         toolkit.abort(403, toolkit._('Not authorized to perform this action'))
-    try:
-        logs = toolkit.get_action('lambda_logs')({}, {
-            'lambda_function': lambda_function
-        })['events']
-    except Exception as e:
-        logs = [
-            {'message': f"[ERROR]\t{datetime.now()}\twrc\tERROR Failed to get logs"},
-            {'message': f"[ERROR]\t{datetime.now()}\twrc\t{type(e).__name__}: {e}"}
-        ]
+    if logs is None:
+        try:
+            logs = toolkit.get_action('lambda_logs')({}, {
+                'lambda_function': lambda_function
+            })['events']
+        except Exception as e:
+            logs = [
+                {'message': f"[ERROR]\t{datetime.now()}\twrc\tERROR Failed to get logs"},
+                {'message': f"[ERROR]\t{datetime.now()}\twrc\t{type(e).__name__}: {e}"}
+            ]
     if logs == []:
         logs = [
             {'message': f"[INFO]\t{datetime.now()}\twrc\tNothing logged yet, please "
-                        "reload the page"},
+                        "wait a moment and then reload the page"},
         ]
     extra_vars = {
         "logs": logs,
@@ -72,7 +73,11 @@ def family_medicine(dataset_id):
                 f"problem persists, contact a system administrator ({e}). "
             ))
 
-    return toolkit.redirect_to('lambda.view_logs', lambda_function=lambda_function)
+    return toolkit.redirect_to(
+        'lambda.view_logs',
+        lambda_function=lambda_function,
+        logs=[]
+    )
 
 
 lambda_blueprint.add_url_rule(
