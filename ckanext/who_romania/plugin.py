@@ -167,7 +167,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             if '/view/' not in toolkit.request.path:
                 response.headers['X-Frame-Options'] = 'SAMEORIGIN'
 
-            if 'logged_out_redirect' in response.headers['Location']:
+            if ("Location" in response.headers) and ('logged_out_redirect' in response.headers['Location']):
                 response.headers["Clear-Site-Data"] = "\"*\""
             return response
 
