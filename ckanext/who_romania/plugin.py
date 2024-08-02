@@ -163,6 +163,13 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             response.headers["HTTP Cross-Origin-Opener-Policy"] = "same-origin"
             response.headers["Cross-Origin-Embedder-Policy"] = "require-corp"
             response.headers["Cross-Origin-Resource-Policy"] = "same-site"
+            response.headers["Content-Security-Policy"] = (
+                "default-src 'self'; "
+                "script-src 'self' https:;"
+                "style-src 'self' 'unsafe-inline' https:;"
+            )
+
+
 
             if '/view/' not in toolkit.request.path:
                 response.headers['X-Frame-Options'] = 'SAMEORIGIN'
