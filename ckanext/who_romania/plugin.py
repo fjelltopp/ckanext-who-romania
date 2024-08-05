@@ -34,6 +34,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     plugins.implements(plugins.IConfigDeclaration)
     plugins.implements(plugins.IPackageController, inherit=True)
     plugins.implements(plugins.IAuthenticator, inherit=True)
+    plugins.implements(plugins.IMiddleware, inherit = True)
 
     # ITemplateHelpers
     def get_helpers(self):
@@ -150,6 +151,34 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     def after_dataset_create(self, context, data_dict):
         if data_dict.get('private'):
             who_romania_upload.add_activity(context, data_dict, "new")
+
+    def make_middleware(self, app, config):
+        @app.after_request
+        def apply_owasp(response):
+            response.headers['Strict-Transport-Security'] = "max-age=31536000; preload"
+            response.headers['X-Content-Type-Options'] = "nosniff"
+            response.headers["X-Permitted-Cross-Domain-Policies"] = "none" #not sure about this one
+            response.headers["Referrer-Policy"] = "no-referrer-when-downgrade" #this is default when not set
+            response.headers["Cache-Control"] = "public, max-age=0, s-maxage=43200"
+            response.headers["HTTP Cross-Origin-Opener-Policy"] = "same-origin"
+            response.headers["Cross-Origin-Embedder-Policy"] = "require-corp"
+            response.headers["Cross-Origin-Resource-Policy"] = "same-site"
+            response.headers["Content-Security-Policy"] = (
+                "default-src 'self'; "
+                "script-src 'self' https:;"
+                "style-src 'self' 'unsafe-inline' https:;"
+            )
+
+
+
+            if '/view/' not in toolkit.request.path:
+                response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+
+            if ("Location" in response.headers) and ('logged_out_redirect' in response.headers['Location']):
+                response.headers["Clear-Site-Data"] = "\"*\""
+            return response
+
+        return app
 
     # IAuthenticator
     def identify(self):
