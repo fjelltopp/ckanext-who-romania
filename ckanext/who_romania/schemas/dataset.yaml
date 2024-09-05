@@ -35,6 +35,9 @@ dataset_fields:
     label: E-Health
   - value: Family Medicine
     label: Family Medicine
+  - value: Gender Based Violence
+    label: Gender Based Violence
+
 
 - field_name: tag_string
   label: Tags
