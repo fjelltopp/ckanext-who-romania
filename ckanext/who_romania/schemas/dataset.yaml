@@ -38,7 +38,6 @@ dataset_fields:
   - value: Gender Based Violence
     label: Gender Based Violence
 
-
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
@@ -59,6 +58,15 @@ dataset_fields:
   user_field: email
   form_snippet: user.html
   display_snippet: email.html
+
+- field_name: language
+  label: Language
+  preset: select
+  choices:
+  - value: en
+    label: English
+  - value: ro
+    label: Română
 
 - field_name: owner_org
   label: Organization
