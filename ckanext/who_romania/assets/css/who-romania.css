@@ -540,6 +540,7 @@ p.small {
     margin-bottom: 24px;
     padding:  20px;
     height:  110px;
+    position: relative;
 }
 
 .category-box .group-thumbnail {
@@ -573,12 +574,15 @@ p.small {
 
 .category-box .btn-delete {
     background: transparent;
-    color: #00205c;
+    background-color: #00205c;
+    color: #fff;
     font-size: 20px;
-    padding: 20px;
+    line-height: 20px;
+    padding: 5px 10px 5px 7px;
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 0px 20px 0px;
 }
 
 .dataset-resources li{
