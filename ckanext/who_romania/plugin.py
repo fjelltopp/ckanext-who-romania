@@ -171,10 +171,10 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
                 "ckanext.who_romania.referrer_policy",
                 "no-referrer-when-downgrade"   # this is default when not set
             )
-            response.headers["Cache-Control"] = config.get(
-                "ckanext.who_romania.cache_control",
-                "public, max-age=0, s-maxage=43200"
-            )
+#            response.headers["Cache-Control"] = config.get(
+#                "ckanext.who_romania.cache_control",
+#                "public, max-age=0, s-maxage=43200"
+#            )
             response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
                 "ckanext.who_romania.coop",
                 "same-origin"
