@@ -173,7 +173,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             )
             response.headers["Cache-Control"] = config.get(
                 "ckanext.who_romania.cache_control",
-                "public, max-age=0, s-maxage=43200"
+                "public, max-age=43200, s-maxage=43200"
             )
             response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
                 "ckanext.who_romania.coop",
