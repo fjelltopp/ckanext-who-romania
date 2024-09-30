@@ -155,10 +155,10 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     def make_middleware(self, app, config):
         @app.after_request
         def apply_owasp(response):
-            # response.headers['Strict-Transport-Security'] = config.get(
-            #     "ckanext.who_romania.strict_transport_security",
-            #     "max-age=31536000; preload"
-            # )
+            response.headers['Strict-Transport-Security'] = config.get(
+                "ckanext.who_romania.strict_transport_security",
+                "max-age=31536000; preload"
+            )
             # response.headers['X-Content-Type-Options'] = config.get(
             #     "ckanext.who_romania.content_type_options",
             #     "nosniff"
