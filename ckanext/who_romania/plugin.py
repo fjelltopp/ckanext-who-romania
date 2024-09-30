@@ -155,47 +155,47 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
     def make_middleware(self, app, config):
         @app.after_request
         def apply_owasp(response):
-            response.headers['Strict-Transport-Security'] = config.get(
-                "ckanext.who_romania.strict_transport_security",
-                "max-age=31536000; preload"
-            )
-            response.headers['X-Content-Type-Options'] = config.get(
-                "ckanext.who_romania.content_type_options",
-                "nosniff"
-            )
-            response.headers["X-Permitted-Cross-Domain-Policies"] = config.get(
-                "ckanext.who_romania.cross_domain_policies",
-                "none"  # not sure about this one
-            )
-            response.headers["Referrer-Policy"] = config.get(
-                "ckanext.who_romania.referrer_policy",
-                "no-referrer-when-downgrade"   # this is default when not set
-            )
-            response.headers["Cache-Control"] = config.get(
-                "ckanext.who_romania.cache_control",
-                "public, max-age=43200, s-maxage=43200"
-            )
-            response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
-                "ckanext.who_romania.coop",
-                "same-origin"
-            )
-            response.headers["Cross-Origin-Embedder-Policy"] = config.get(
-                "ckanext.who_romania.coep",
-                "require-corp"
-            )
-            response.headers["Cross-Origin-Resource-Policy"] = config.get(
-                "ckanext.who_romania.corp",
-                "cross-origin"
-            )
-            response.headers["Content-Security-Policy"] = config.get(
-                "ckanext.who_romania.content_security_policy",
-                ""
-            )
-            if '/view/' not in toolkit.request.path:
-                response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+            # response.headers['Strict-Transport-Security'] = config.get(
+            #     "ckanext.who_romania.strict_transport_security",
+            #     "max-age=31536000; preload"
+            # )
+            # response.headers['X-Content-Type-Options'] = config.get(
+            #     "ckanext.who_romania.content_type_options",
+            #     "nosniff"
+            # )
+            # response.headers["X-Permitted-Cross-Domain-Policies"] = config.get(
+            #     "ckanext.who_romania.cross_domain_policies",
+            #     "none"  # not sure about this one
+            # )
+            # response.headers["Referrer-Policy"] = config.get(
+            #     "ckanext.who_romania.referrer_policy",
+            #     "no-referrer-when-downgrade"   # this is default when not set
+            # )
+            # response.headers["Cache-Control"] = config.get(
+            #     "ckanext.who_romania.cache_control",
+            #     "public, max-age=43200, s-maxage=43200"
+            # )
+            # response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
+            #     "ckanext.who_romania.coop",
+            #     "same-origin"
+            # )
+            # response.headers["Cross-Origin-Embedder-Policy"] = config.get(
+            #     "ckanext.who_romania.coep",
+            #     "require-corp"
+            # )
+            # response.headers["Cross-Origin-Resource-Policy"] = config.get(
+            #     "ckanext.who_romania.corp",
+            #     "cross-origin"
+            # )
+            # response.headers["Content-Security-Policy"] = config.get(
+            #     "ckanext.who_romania.content_security_policy",
+            #     ""
+            # )
+            # if '/view/' not in toolkit.request.path:
+            #     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
 
-            if ("Location" in response.headers) and ('logged_out_redirect' in response.headers['Location']):
-                response.headers["Clear-Site-Data"] = "\"*\""
+            # if ("Location" in response.headers) and ('logged_out_redirect' in response.headers['Location']):
+            #     response.headers["Clear-Site-Data"] = "\"*\""
             return response
 
         return app
