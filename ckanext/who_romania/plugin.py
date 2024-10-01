@@ -21,7 +21,6 @@ log = logging.getLogger(__name__)
 
 
 class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
-
     plugins.implements(plugins.IConfigurable)
     plugins.implements(plugins.IConfigurer)
     plugins.implements(plugins.IFacets, inherit=True)
@@ -168,12 +167,14 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
                 "ckanext.who_romania.cache_control",
                 "public, max-age=43200, s-maxage=43200",
             )
-            response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
-                "ckanext.who_romania.coop", "same-origin"
-            )
-            response.headers["Cross-Origin-Embedder-Policy"] = config.get(
-                "ckanext.who_romania.coep", "require-corp"
-            )
+            # response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
+            #     "ckanext.who_romania.coop",
+            #     "same-origin"
+            # )
+            # response.headers["Cross-Origin-Embedder-Policy"] = config.get(
+            #     "ckanext.who_romania.coep",
+            #     "require-corp"
+            # )
             response.headers["Cross-Origin-Resource-Policy"] = config.get(
                 "ckanext.who_romania.corp", "cross-origin"
             )
