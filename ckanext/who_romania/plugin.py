@@ -167,26 +167,26 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
                 "ckanext.who_romania.cache_control",
                 "public, max-age=43200, s-maxage=43200",
             )
-            response.headers["HTTP Cross-Origin-Opener-Policy"] = config.get(
+            response.headers["Cross-Origin-Opener-Policy"] = config.get(
                 "ckanext.who_romania.coop", "same-origin"
             )
             response.headers["Cross-Origin-Embedder-Policy"] = config.get(
                 "ckanext.who_romania.coep", "require-corp"
             )
-            # CORP defo breaks the header
-            # response.headers["Cross-Origin-Resource-Policy"] = config.get(
-            #     "ckanext.who_romania.corp", "cross-origin"
-            # )
+            response.headers["Cross-Origin-Resource-Policy"] = config.get(
+                "ckanext.who_romania.corp", "cross-origin"
+            )
 
-            # response.headers["Content-Security-Policy"] = config.get(
-            #     "ckanext.who_romania.content_security_policy",
-            #     ""
-            # )
-            # if '/view/' not in toolkit.request.path:
-            #     response.headers['X-Frame-Options'] = 'SAMEORIGIN'
+            response.headers["Content-Security-Policy"] = config.get(
+                "ckanext.who_romania.content_security_policy", ""
+            )
+            if "/view/" not in toolkit.request.path:
+                response.headers["X-Frame-Options"] = "SAMEORIGIN"
 
-            # if ("Location" in response.headers) and ('logged_out_redirect' in response.headers['Location']):
-            #     response.headers["Clear-Site-Data"] = "\"*\""
+            if ("Location" in response.headers) and (
+                "logged_out_redirect" in response.headers["Location"]
+            ):
+                response.headers["Clear-Site-Data"] = '"*"'
             return response
 
         return app
