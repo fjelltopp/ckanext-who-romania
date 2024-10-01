@@ -180,9 +180,6 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             response.headers["Content-Security-Policy"] = config.get(
                 "ckanext.who_romania.content_security_policy", ""
             )
-            if "/view/" not in toolkit.request.path:
-                response.headers["X-Frame-Options"] = "SAMEORIGIN"
-
             if ("Location" in response.headers) and (
                 "logged_out_redirect" in response.headers["Location"]
             ):
