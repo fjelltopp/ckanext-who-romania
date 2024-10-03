@@ -21,6 +21,9 @@
         background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)) url("/images/large_promoted_background.png") no-repeat center;
     }
 }
+.promoted-background .show-categories {
+    margin-top: 24px;
+}
 /* promoted background */
 
 /* hide insights */
