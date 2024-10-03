@@ -4,5 +4,6 @@
     {% snippet 'snippets/footer_links.html', copyrights_owner='<a href="https://www.who.int/romania" target="_blank">WHO Romania Country Office</a>' | safe, devs='<a class="hide-text" target="_blank" href="https://fjelltopp.org">Fjelltopp</a>' %}
 {% endblock %}
 
-
-
+{% block footer_logo_section %}
+<a href="https://who.int" target="_blank"><img class="footer-logo" src="/images/who.png" alt=""/></a>
+{% endblock %}

@@ -1,0 +1,7 @@
+{% ckan_extends %}
+
+{% block footer %}
+    <div class="big-footer {% if c.userobj %}connected{% endif %}">
+    {% include "footer.html" %}
+    </div>
+{% endblock %}
