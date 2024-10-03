@@ -2,5 +2,7 @@
 
 {% block styles %}
     {{ super() }}
+    {% block fjelltopp_theme_palette %}{% asset 'who-romania/wrc-theme-palette' %}{% endblock %}
+    {% block fjelltopp_theme_extended %}{% endblock %}
     {% asset 'who-romania/who-romania-theme' %}
 {% endblock %}
