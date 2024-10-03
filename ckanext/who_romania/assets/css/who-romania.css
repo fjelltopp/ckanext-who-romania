@@ -116,3 +116,13 @@
 }
 
 /* groups */
+
+.module.automation{
+    border-top: 1px dotted #DDD;
+}
+
+.module .automation-function{
+    border-top: 1px dotted #DDD;
+    margin-top: 20px;
+    padding: 10px 0px;
+}
