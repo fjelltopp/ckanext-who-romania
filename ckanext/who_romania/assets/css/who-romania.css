@@ -1,0 +1,23 @@
+
+.promoted-background {
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/small_promoted_background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #FFFFFF;
+}
+
+@media only screen and (min-width: 468px) {
+    .promoted-background {
+        background-size: cover;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)) url("/images/medium_promoted_background.png") no-repeat center;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .promoted-background {
+        background-size: cover;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)) url("/images/large_promoted_background.png") no-repeat center;
+    }
+}
