@@ -1,36 +1,36 @@
 :root {
     /* theme*/
-    --theme: 'who-romania';
+    --theme: 'wrc';
     /* palette */
     --primary: #00205c;
     --primary-rgb-red: 0;
-    --primary-rgb-green: 41;
-    --primary-rgb-blue: 32;
-    --secondary: #008dc9;
+    --primary-rgb-green: 32;
+    --primary-rgb-blue: 92;
+    --secondary:  #008dc9;
     --background: #DFF0DB;
-    --tag: #056839;
-    --tag-dark: #EF7D00;
-    --tag-light: #fff1e9;
+    --tag: #DDEFF9;
+    --tag-dark: #DDEFF9;
+    --tag-light: #DDEFF9;
     --tag-background: #FCF0E3;
     --dark: #13240F;
     --light: #FFFFFF;
-    --primary65: #9ad98c;
-    --primary25: #DFF0DB;
-    --primary10: #EBF1EA;
-    --neutral-light-grey:#EDE8E8;
+    --primary65: #79B5E3;
+    --primary25: #C9DDF3;
+    --primary10: #DDEFF9;
+    --neutral-light-grey:#E6E7E8;
     --A11y: #757575;
-    --highlight-box-bgcolor: #192f14;
+    --highlight-box-bgcolor: #19366c;
     /* fonts */
     --default-font-weight: 700;
     --default-font-size: 18px;
     --default-line-height: 20px;
     --default-font-family: 'Inter';
-    --default-font-color: #13240F;
+    --default-font-color: #00205c;
     /* logo vertical bar (right) */
     --logo-left-v-bar-display: none; /* or inline-block if shown */
     --logo-left-v-bar-padding-right: 10px; /* set to 19px if visible */
     /* promoted background color */
-    --promoted-background-color: #13240F;
+    --promoted-background-color: #00205c;
     /* insights */
     --lower-container-display: flex;  /* set to flex to show */
     --after-insights-min-height: 400px;
