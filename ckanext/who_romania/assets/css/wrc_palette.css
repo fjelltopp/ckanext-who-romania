@@ -1,23 +1,23 @@
 :root {
     /* theme*/
-    --theme: 'zarr';
+    --theme: 'who-romania';
     /* palette */
-    --primary: #13240F;
+    --primary: #00205c;
     --primary-rgb-red: 0;
     --primary-rgb-green: 41;
     --primary-rgb-blue: 32;
-    --secondary: #198A00;
+    --secondary: #008dc9;
     --background: #DFF0DB;
-    --tag: #EF7D00;
+    --tag: #056839;
     --tag-dark: #EF7D00;
-    --tag-light: #EF7D00;
+    --tag-light: #fff1e9;
     --tag-background: #FCF0E3;
     --dark: #13240F;
     --light: #FFFFFF;
     --primary65: #9ad98c;
     --primary25: #DFF0DB;
     --primary10: #EBF1EA;
-    --neutral-light-grey:#e6e7e8;
+    --neutral-light-grey:#EDE8E8;
     --A11y: #757575;
     --highlight-box-bgcolor: #192f14;
     /* fonts */
