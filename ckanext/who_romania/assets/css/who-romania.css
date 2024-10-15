@@ -98,14 +98,24 @@
     width: 92px;
     height: 64px;
 }
+
 .topics li a .topic-top-square {
-    background-color: #DFF0DB;
+    background-color: var(--primary25);
     width: 40px;
     height: 40px;
     margin-left: 26px;
     margin-right: 26px;
     margin-bottom: 6px;
     border-radius: 4px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topics li a .topic-top-square img {
+    max-width: 36px;
+    max-height: 36px;
 }
 .topics li a .topic-link {
     text-align: center;
@@ -189,4 +199,9 @@
 
 .account-masthead .account ul li a, .account-masthead .account ul li a:hover {
     color: var(--primary);
+}
+
+/* tag badges */
+.dataset-resources li {
+    background: var(--primary65);
 }
