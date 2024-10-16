@@ -23,6 +23,9 @@
 }
 .promoted-background .show-categories {
     margin-top: 24px;
+    a {
+        color: var(--secondary);
+    }
 }
 /* promoted background */
 
