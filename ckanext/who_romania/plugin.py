@@ -165,18 +165,17 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             )
             response.headers["Cache-Control"] = config.get(
                 "ckanext.who_romania.cache_control",
-                "public, max-age=43200, s-maxage=43200",
+                "",
             )
             response.headers["Cross-Origin-Opener-Policy"] = config.get(
-                "ckanext.who_romania.coop", "same-origin"
+                "ckanext.who_romania.coop", "same-site"
             )
             response.headers["Cross-Origin-Embedder-Policy"] = config.get(
-                "ckanext.who_romania.coep", "require-corp"
+                "ckanext.who_romania.coep", "unsafe-none"
             )
             response.headers["Cross-Origin-Resource-Policy"] = config.get(
                 "ckanext.who_romania.corp", "cross-origin"
             )
-
             response.headers["Content-Security-Policy"] = config.get(
                 "ckanext.who_romania.content_security_policy", ""
             )
