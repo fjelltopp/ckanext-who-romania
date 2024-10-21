@@ -7,14 +7,14 @@ const components = {
 }
 
 module.exports = {
-    mode: 'development',
+    mode: 'production',
     target: 'web',
     entry: components,
     output: {
         path: outputPath,
         filename: '[name].js'
     },
-    devtool: 'eval-source-map',
+    devtool: false,
     module: {
         rules: [
             {
