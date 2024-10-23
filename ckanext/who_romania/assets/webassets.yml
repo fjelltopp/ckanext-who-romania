@@ -5,7 +5,7 @@ who-romania-theme:
     - css/who-romania.css
 
 wrc-theme-palette:
-  output: zarr/%(version)s-zarr-palette.css
+  output: who-romania/%(version)s-who-romania-palette.css
   contents:
     - css/wrc_palette.css
 
