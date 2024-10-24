@@ -2,8 +2,12 @@ who-romania-theme:
   filter: cssrewrite
   output: who-romania/%(version)s-who-romania.css
   contents:
-    - css/inter.css
     - css/who-romania.css
+
+wrc-theme-palette:
+  output: who-romania/%(version)s-who-romania-palette.css
+  contents:
+    - css/wrc_palette.css
 
 FileInputComponentStyles:
     contents:
