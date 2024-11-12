@@ -128,6 +128,29 @@
     color: #13240F;
 }
 
+.topic-link, .topic-link:hover {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100% !important;
+    font-size: 1em;
+    color: var(--dark);
+    text-decoration: none;
+}
+
+.topics li {
+    width: 30%;
+    border: none;
+}
+
+.topic-link img {
+  flex-shrink: 0;
+}
+
+.topic-link .group-title {
+    padding-left: 10px;
+}
+
 /* groups */
 
 .module.automation{
