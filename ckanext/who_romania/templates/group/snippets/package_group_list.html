@@ -1,0 +1,10 @@
+{% extends 'group/snippets/group_list.html' %}
+
+{% block group_list %}
+    {% set groups = groups %}
+        <ul class="topics">
+        {% for group in groups %}
+            {% snippet "group/snippets/package_group_item.html", group=group, position=loop.index %}
+        {% endfor %}
+        </ul>
+{% endblock %}

@@ -127,6 +127,58 @@
     color: #13240F;
 }
 
+/* category box */
+.dataset .category-box {
+    background: var(--light);
+    border: var(--primary10) 1px solid;
+    border-radius: 6px;
+    margin-bottom: 24px;
+    padding:  20px;
+    height:  110px;
+    position: relative;
+}
+
+.dataset .category-box .group-thumbnail {
+    float:  left;
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 70px;
+    margin-right: 20px;
+}
+
+.dataset .category-box .group-text {
+    vertical-align: middle;
+    width:  100%;
+}
+
+.dataset .category-box .group-text .title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--primary);
+}
+
+.dataset .category-box .group-text .desc{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary);
+    overflow: hidden;
+    height: 50px;
+}
+
+.dataset .category-box .btn-delete {
+    background-color: #00205c;
+    color: var(--light);
+    font-size: 20px;
+    line-height: 20px;
+    padding: 5px 10px 5px 7px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0 0 20px 0;
+}
+
 /* groups */
 
 .module.automation{
