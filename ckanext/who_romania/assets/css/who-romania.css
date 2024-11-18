@@ -208,3 +208,8 @@
 .dataset-resources li {
     background: var(--primary65);
 }
+
+.btn-danger {
+  background-color: #C70039;
+  border-color: config.$tag-light;
+}
