@@ -78,12 +78,19 @@
 .topics-background .container {
     width: 100%;
 }
+
 .topics {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
-    margin-top: 24px;
+   display: flex;
+   flex-wrap: wrap;
+   gap: 24px;
+   list-style-type: none;
+   padding: 0;
+   width: 100%;
+   margin-top: 24px;
+   align-items: flex-start;
+    margin-left: -28px;
 }
+
 .topics li:last-child {
     margin-right: 0;
 }
