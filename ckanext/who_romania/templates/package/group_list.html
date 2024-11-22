@@ -19,7 +19,7 @@
   {% if pkg_dict.groups %}
     <form method="post">
       {{ h.csrf_input() }}
-      {% snippet 'group/snippets/group_list.html', groups=pkg_dict.groups %}
+      {% snippet 'group/snippets/package_group_list.html', groups=pkg_dict.groups %}
     </form>
   {% else %}
     <p class="empty">{{ _('There are no categories associated with this dataset') }}</p>
