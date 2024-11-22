@@ -21,6 +21,6 @@
         ('dataset.search', _('Datasets')),
         ('group.index', _('Categories')),
         ('user.index', _('Users')),
-        ('saml2auth.saml2login', _('Log in'))
+        (toolkit.config.get('ckan.auth.login_view', 'user.login'), _('Log in'))
          ) }}
 {% endblock %}
