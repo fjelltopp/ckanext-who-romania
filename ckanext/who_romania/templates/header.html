@@ -21,6 +21,6 @@
         ('dataset.search', _('Datasets')),
         ('group.index', _('Categories')),
         ('user.index', _('Users')),
-        (toolkit.config.get('ckan.auth.login_view', 'user.login'), _('Log in'))
+        (h.get_login_view(), _('Log in'))
          ) }}
 {% endblock %}

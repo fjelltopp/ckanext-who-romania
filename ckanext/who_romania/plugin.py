@@ -49,6 +49,7 @@ class WHORomaniaPlugin(plugins.SingletonPlugin, DefaultPermissionLabels):
             "month_formatter": who_romania_helpers.month_formatter,
             "get_dates_of_weekday_in_month": who_romania_helpers.get_dates_of_weekday_in_month,
             "get_week_options": who_romania_helpers.get_week_options,
+            "get_login_view": who_romania_helpers.get_login_view,
         }
 
     # IConfigurer
