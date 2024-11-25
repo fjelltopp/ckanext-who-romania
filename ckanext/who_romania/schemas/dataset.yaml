@@ -82,6 +82,7 @@ dataset_fields:
     label: Public
   - value: true
     label: Private
+  default: true
   validators: boolean_validator
   output_validators: boolean_validator
 
