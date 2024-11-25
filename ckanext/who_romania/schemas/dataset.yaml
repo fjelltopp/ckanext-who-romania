@@ -42,7 +42,6 @@ dataset_fields:
   - value: DTRA Emergency Coordination
     label: DTRA Emergency Coordination
 
-
 - field_name: tag_string
   label: Tags
   preset: tag_string_autocomplete
@@ -92,6 +91,25 @@ dataset_fields:
   validators: boolean_validator
   output_validators: boolean_validator
 
+- field_name: approval
+  label: Approved
+  help_text: Is this an approved dataset
+  help_inline: true
+  preset: select
+  choices:
+  - value: false
+    label: Unapproved
+  - value: true
+    label: Approved
+  default: false
+  validators: boolean_validator
+  output_validators: boolean_validator
+
+- field_name: approved_by
+  label: Approved by
+  help_text:
+  display_if:
+    approval: true
 
 resource_fields:
 
@@ -107,3 +125,23 @@ resource_fields:
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
+
+- field_name: approval
+  label: Approved
+  help_text: Is this an approved file
+  help_inline: true
+  preset: select
+  choices:
+  - value: false
+    label: Unapproved
+  - value: true
+    label: Approved
+  default: false
+  validators: boolean_validator
+  output_validators: boolean_validator
+
+- field_name: approved_by
+  label: Approved by
+  help_text:
+  display_if:
+    approval: true
