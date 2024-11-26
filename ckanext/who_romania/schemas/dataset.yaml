@@ -107,9 +107,6 @@ dataset_fields:
 
 - field_name: approved_by
   label: Approved by
-  help_text:
-  display_if:
-    approval: true
 
 resource_fields:
 
@@ -142,6 +139,3 @@ resource_fields:
 
 - field_name: approved_by
   label: Approved by
-  help_text:
-  display_if:
-    approval: true
