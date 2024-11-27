@@ -19,24 +19,28 @@ dataset_fields:
 - field_name: notes
   label: Description
   form_snippet: markdown.html
-  form_placeholder: eg. Some useful notes about the data
+  form_placeholder: eg. Some useful notes about the data or the document
 
 - field_name: program_area
   label: Program Area
   preset: select
   choices:
-  - value: Sexual and Reproductive Health
-    label: Sexual and Reproductive Health
-  - value: HIV & TB
-    label: HIV & TB
-  - value: Mental Health and Psychosocial Support
-    label: Mental Health and Psychosocial Support
-  - value: E-Health
-    label: E-Health
-  - value: Family Medicine
-    label: Family Medicine
-  - value: Gender Based Violence
-    label: Gender Based Violence
+  - value: General
+    label: General
+  - value: Admin
+    label: Admin
+  - value: Emergencies Program
+    label: Emergencies Program
+  - value: National Recovery and Resilience Plan (NRRP)
+    label: National Recovery and Resilience Plan (NRRP)
+  - value: Biennial Collaborative Agreement (BCA)
+    label: Biennial Collaborative Agreement (BCA)
+  - value: DTRA One Health
+    label: DTRA One Health
+  - value: DTRA Laboratory
+    label: DTRA Laboratory
+  - value: DTRA Emergency Coordination
+    label: DTRA Emergency Coordination
 
 - field_name: tag_string
   label: Tags
@@ -67,6 +71,7 @@ dataset_fields:
     label: English
   - value: ro
     label: Română
+  default: en
 
 - field_name: owner_org
   label: Organization
@@ -81,22 +86,56 @@ dataset_fields:
   - value: false
     label: Public
   - value: true
-    label: Private
+    label: Internal
+  default: true
   validators: boolean_validator
   output_validators: boolean_validator
 
+- field_name: approval
+  label: Approved
+  help_text: Is this an approved dataset
+  help_inline: true
+  preset: select
+  choices:
+  - value: false
+    label: Unapproved
+  - value: true
+    label: Approved
+  default: false
+  validators: boolean_validator
+  output_validators: boolean_validator
+
+- field_name: approved_by
+  label: Approved by
 
 resource_fields:
 
 - field_name: name
   label: Name
-  form_placeholder: eg. Malawi HTC Scale Up Plan
+  form_placeholder: Name of the document
 
 - field_name: description
   label: Description
   form_snippet: markdown.html
-  form_placeholder: Some useful notes about the data
+  form_placeholder: Some useful notes about the document/data
 
 - field_name: format
   label: Format
   preset: resource_format_autocomplete
+
+- field_name: approval
+  label: Approved
+  help_text: Is this an approved file
+  help_inline: true
+  preset: select
+  choices:
+  - value: false
+    label: Unapproved
+  - value: true
+    label: Approved
+  default: false
+  validators: boolean_validator
+  output_validators: boolean_validator
+
+- field_name: approved_by
+  label: Approved by

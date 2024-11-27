@@ -21,6 +21,6 @@
         ('dataset.search', _('Datasets')),
         ('group.index', _('Categories')),
         ('user.index', _('Users')),
-        ('user.login', _('Log in'))
+        (h.get_login_view(), _('Log in'))
          ) }}
 {% endblock %}

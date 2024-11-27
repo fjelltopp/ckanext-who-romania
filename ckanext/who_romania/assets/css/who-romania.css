@@ -1,31 +1,34 @@
 /* promoted background */
 .promoted-background {
     width: 100%;
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/large_promoted_background.png");
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("/images/small_promoted_background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 467px) {
+@media only screen and (min-width: 467px) {
     .promoted-background {
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("/images/small_promoted_background.png");
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
+                          url("/images/medium_promoted_background.png");
     }
 }
 
-@media only screen and (min-width: 468px) and (max-width: 991px) {
+@media only screen and min-width: 991px {
     .promoted-background {
-        background-size: cover;
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)), url("/images/medium_promoted_background.png");
+        background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.0)),
+                          url("/images/large_promoted_background.png");
     }
 }
 
 .promoted-background .show-categories {
     margin-top: 24px;
-    a {
-        color: var(--secondary);
-    }
+}
+
+.promoted-background .show-categories a {
+    color: var(--secondary);
 }
 /* promoted background */
 
@@ -265,4 +268,9 @@
 /* tag badges */
 .dataset-resources li {
     background: var(--primary65);
+}
+
+.btn-danger {
+  background-color: #C70039;
+  border-color: config.$tag-light;
 }
