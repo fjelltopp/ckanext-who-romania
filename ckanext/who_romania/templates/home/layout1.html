@@ -1,20 +1,8 @@
 {% ckan_extends %}
 
-{% block groups %}
-    {%  set categories = h.get_all_groups() %}
-    {% if categories != [] %}
-    <div class="topics-background">
-        <div class="container">
-        <h1>{{_('Dataset categories')}}</h1>
-            {% block document_categories %}
-                {% snippet "group/snippets/group_list.html", groups=h.get_all_groups(), origin='homepage' %}
-            {% endblock %}
-        </div>
-    </div>
-    {% endif %}
-{% endblock %}
-
 {% block fx_bg %}{% endblock %}
+
+{% block home_group_title %}{{ _('Dataset {name}').format(name=h.pluralize(h.get_group_naming()) | capitalize) }}{% endblock %}
 
 {% block title %}{{ _('Featured data') }}{% endblock %}
 {% block first_row_title %}{{ _('Featured datasets') }}{% endblock %}
