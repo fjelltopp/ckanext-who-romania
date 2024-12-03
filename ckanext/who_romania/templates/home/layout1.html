@@ -1,8 +1,10 @@
 {% ckan_extends %}
 
+{% set group_name = h.pluralize(h.get_group_naming()) or 'Groups' %}
+
 {% block fx_bg %}{% endblock %}
 
-{% block home_group_title %}{{ _('Dataset {name}').format(name=h.pluralize(h.get_group_naming()) | capitalize) }}{% endblock %}
+{% block home_group_title %}{{ _('Dataset {name}').format(name=group_name | capitalize) }}{% endblock %}
 
 {% block title %}{{ _('Featured data') }}{% endblock %}
 {% block first_row_title %}{{ _('Featured datasets') }}{% endblock %}
