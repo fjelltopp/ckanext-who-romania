@@ -1,12 +1,12 @@
 {% ckan_extends %}
 
-{% set group_name = h.pluralize(h.get_group_naming()) %}
+{% set group_name = h.get_group_naming() %}
 
 {% block content_primary_nav %}
     <ul class="nav nav-tabs">
             {{ h.build_nav_icon('dashboard.datasets', h.humanize_entity_type('package', dataset_type, 'my label') or _('My Datasets'), icon='sitemap') }}
             {{ h.build_nav_icon('dashboard.organizations', h.humanize_entity_type('organization', org_type, 'my label') or _('My Organizations'), icon='building-o') }}
-            {{ h.build_nav_icon('dashboard.groups', h.humanize_entity_type('group', group_type, 'my label') or _('My {name}').format(name=group_name | capitalize), icon='users') }}
+            {{ h.build_nav_icon('dashboard.groups', h.humanize_entity_type('group', group_type, 'my label') or _('My {name}').format(name=h.pluralize(group_name) | capitalize), icon='users') }}
             {{ h.build_nav_icon('activity.dashboard', _('My activity'), type='user', name=user.name, id="user_activity") }}
     </ul>
  {% endblock %}
