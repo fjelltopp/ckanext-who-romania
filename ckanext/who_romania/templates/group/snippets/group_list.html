@@ -1,10 +1,2 @@
 {% ckan_extends %}
 
-{% block group_list %}
-    {% set groups = groups %}
-        <ul class="topics">
-        {% for group in groups %}
-            {% snippet "group/snippets/group_item.html", group=group, position=loop.index %}
-        {% endfor %}
-        </ul>
-{% endblock %}
