@@ -1,4 +1,3 @@
-import ckan.logic as logic
 import ckan.model as model
 from ckan.common import request, g
 import ckan.plugins.toolkit as toolkit
@@ -19,7 +18,7 @@ def get_dataset_from_id(id, validate=False):
         "validate": validate,
         "use_cache": False,
     }
-    package_show_action = logic.get_action("package_show")
+    package_show_action = toolkit.get_action("package_show")
     return package_show_action(context, {"id": id})
 
 
@@ -75,16 +74,16 @@ def _facet_sort_function(facet_name, facet_items):
 
 
 def get_all_groups():
-    return logic.get_action("group_list")(
+    return toolkit.get_action("group_list")(
         data_dict={"sort": "title asc", "all_fields": True}
     )
 
 
 def get_featured_datasets():
-    featured_datasets = logic.get_action("package_search")(
+    featured_datasets = toolkit.get_action("package_search")(
         data_dict={"fq": "tags:featured", "sort": "metadata_modified desc", "rows": 3}
     )["results"]
-    recently_updated = logic.get_action("package_search")(
+    recently_updated = toolkit.get_action("package_search")(
         data_dict={"q": "*:*", "sort": "metadata_modified desc", "rows": 3}
     )["results"]
     datasets = featured_datasets + recently_updated
@@ -92,7 +91,7 @@ def get_featured_datasets():
 
 
 def get_user_from_id(userid):
-    user_show_action = logic.get_action("user_show")
+    user_show_action = toolkit.get_action("user_show")
     user_info = user_show_action({}, {"id": userid})
     return user_info["fullname"]
 
