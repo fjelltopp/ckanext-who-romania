@@ -3,6 +3,18 @@ from ckan.common import request, g
 import ckan.plugins.toolkit as toolkit
 from datetime import datetime, timedelta
 
+def get_site_statistics() -> dict[str, int]:
+    '''This function used be a core helper but it was removed in CKAN 2.11.0
+    We reproduce it here to templates can continue working as usual.
+    '''
+    stats = {}
+    stats['dataset_count'] = toolkit.get_action('package_search')(
+        {}, {"rows": 1})['count']
+    stats['group_count'] = len(toolkit.get_action('group_list')({}, {}))
+    stats['organization_count'] = len(
+        toolkit.get_action('organization_list')({}, {}))
+    return stats
+
 
 def get_user_obj(field=""):
     """
